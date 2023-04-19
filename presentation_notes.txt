@@ -1,0 +1,7 @@
+Group 1: NLP on wiki text? What about source material of philosophers. They said it was easier with one source, but it is an interesting thought.
+
+Group 2: Plot degree distribution of networks. Look at centrality of characters, can we find the most central characters?
+
+Group 4: Build network based on characters appearing together.
+
+Use directed measure of centrality to find central characters.
