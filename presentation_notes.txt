@@ -5,3 +5,9 @@ Group 2: Plot degree distribution of networks. Look at centrality of characters,
 Group 4: Build network based on characters appearing together.
 
 Use directed measure of centrality to find central characters.
+
+Distribution of edge weights
+
+WEighted community detection, weighted directed modularity
+
+Could use books or scripts, can be found online.
