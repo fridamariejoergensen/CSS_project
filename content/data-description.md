@@ -4,6 +4,8 @@ prev: "/"
 next: network-analysis
 ---
 
+{{< load-plotly >}}
+
 The data utilized in this project comes from the [Harry Potter fandom wiki](https://harrypotter.fandom.com/wiki/Main_Page). First, the Harry Potter wiki API was queried to obtain all characters in the universe. From these queries we gained information about a character's name, blood status (muggle, pure blood etc.), house, species, death time, alias, wiki-link, and gender. The wiki-links were then used to webscrape each character's wiki page. Two things were scraped, the main text of the articles and the links in the text. From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
 
 ???? Perhaps insert gif showing were the things we found ?????
