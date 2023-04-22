@@ -4,22 +4,41 @@ prev: "/"
 next: network-analysis
 ---
 
+The data utilized in this project comes from the [Harry Potter fandom wiki](https://harrypotter.fandom.com/wiki/Main_Page). First, the Harry Potter wiki API was queried to obtain all characters in the universe. From these queries we gained information about a character's name, blood status (muggle, pure blood etc.), house, species, death time, alias, wiki-link, and gender. The wiki-links were then used to webscrape each character's wiki page. Two things were scraped, the main text of the articles and the links in the text. From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.
+???? Perhaps insert gif showing were the things we found ?????
 
-| Top 10 Species  | Count |
+## **Filtering the data**
+The original data set consisted of 4066 characters. However, some of the characters had little or no information attached. We concluded that if we had no information about a character or if their name included "unidentified", they were not relevant for the network. Furthermore, some of the data was actually the actors from the Harry Potter movies. Lastly, some nodes were groups of people, eg. Arthur Weasley's ten unidentified subordinates. We created an initial network to check the degree of the characters, to exclude characters with no links. To summarize, the following filters were applied to remove data:
+
+* If blood status, house, species, death time and alias were all "None"
+* If name started with "unidentified" 
+* If name was in a list of actors webscraped from [imdb](https://www.imdb.com/title/tt0241527/fullcredits#cast)
+* If the species was "Humans" indicating that the entry was a group
+* If character has degree 0 in the network
+
+After these filters, the data consisted of ???? characters.
+
+## **Visualization of data**
+To gain insight into the data we have created a few visualizations. Firstly, we see that the data is mostly populated by humans, however there are many species represented in the data set. The total number of different species is 182. The distribution of the top species and a wordcloud showing the different species can be seen below.
+
+<table>
+<tr><td>
+
+| Top 5 Species  | Count |
 |---|---|
 | Human | 3096 |
 | Goblin | 31 |
 | House-elf | 20 |
 | Human (formerly), Ghost | 19 |
 | Giant | 12 |
-| Vampire | 10 |
-| Bowtruckle | 9 |
-| Cat | 9 |
-| Human (Werewolf) | 8 |
-| Centaur | 8 |
 
+</td><td>
+
+<img src="/images/species_wordcloud.png"     />
+
+</td></tr> </table>
+<i>Figur ???. The count of the top species and a wordcloud, where the size of a species represents the count. The wize of the words are not linearly scaled, as "Human" would then be the only visible word.</i>
 
 > Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
 

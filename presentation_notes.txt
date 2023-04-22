@@ -17,3 +17,4 @@ TODO:
 Plot In-degree og out-degree
 Vis top 10 characters based on in and out-degree
 Personlige wordclouds
+Gif af webscraping lokationer
