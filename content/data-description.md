@@ -42,6 +42,10 @@ To gain insight into the data we have created a few visualizations. Firstly, we 
 
 > Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
 
+Another clear tendency to see from the data is that houses 'Griffyndor' and 'Slytherin' holds the most members, approximately 250 and 225. The ??? characters are distributed among 8 houses. The plot only shows 7 houses, as the last one holds all characters whose 'House' attribute is empty (referred to as 'Unknown'). The 'Unknown' house has 2679 characters and thereby is out of range compared to the other houses.
+
+<plotly json="images/Houses_count.json" height="550px" />
+
 Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. 
 
 ![](/images/dtu-logo.png)
