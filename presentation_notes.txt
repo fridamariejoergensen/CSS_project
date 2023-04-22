@@ -11,3 +11,9 @@ Distribution of edge weights
 WEighted community detection, weighted directed modularity
 
 Could use books or scripts, can be found online.
+
+
+TODO:
+Plot In-degree og out-degree
+Vis top 10 characters based on in and out-degree
+Personlige wordclouds
