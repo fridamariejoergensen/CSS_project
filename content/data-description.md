@@ -4,15 +4,6 @@ prev: "/"
 next: network-analysis
 ---
 
-{{ $json := .Get "json" }}
-{{ $height := .Get "height" | default "200px" }}
-<div id="{{$json}}" class="plotly" style="height:{{$height}}"></div>
-<script>
-Plotly.d3.json({{$json}}, function(err, fig) {
-    Plotly.plot('{{$json}}', fig.data, fig.layout, {responsive: true});
-});
-</script>
-
 The data utilized in this project comes from the [Harry Potter fandom wiki](https://harrypotter.fandom.com/wiki/Main_Page). First, the Harry Potter wiki API was queried to obtain all characters in the universe. From these queries we gained information about a character's name, blood status (muggle, pure blood etc.), house, species, death time, alias, wiki-link, and gender. The wiki-links were then used to webscrape each character's wiki page. Two things were scraped, the main text of the articles and the links in the text. From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
 
 ???? Perhaps insert gif showing were the things we found ?????
@@ -54,7 +45,6 @@ To gain insight into the data we have created a few visualizations. Firstly, we 
 Another clear tendency to see from the data is that houses 'Griffyndor' and 'Slytherin' holds the most members, approximately 250 and 225. The ??? characters are distributed among 8 houses. The plot only shows 7 houses, as the last one holds all characters whose 'House' attribute is empty (referred to as 'Unknown'). The 'Unknown' house has 2679 characters and thereby is out of range compared to the other houses.
 
 PLOT
-{{< plotly json="/images/Houses_count.json" height="700">}} 
 
 Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. 
 
