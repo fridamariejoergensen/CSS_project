@@ -1,5 +1,5 @@
 baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "The network of Harry Potter characters"
+title = "The Network of Harry Potter Characters"
 description = "This is the web page explaining the results of an investigation of the Harry Potter universe."
 relativeURLs = true
 theme = "theme" 
