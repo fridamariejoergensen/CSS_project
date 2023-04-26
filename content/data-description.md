@@ -4,18 +4,20 @@ prev: "/"
 next: network-analysis
 ---
 
-The data utilized in this project comes from the [Harry Potter fandom wiki](https://harrypotter.fandom.com/wiki/Main_Page). First, the Harry Potter wiki API was queried to obtain all characters in the universe. From these queries we gained information about a character's name, blood status (muggle, pure blood etc.), house, species, death time, alias, wiki-link, and gender. The wiki-links were then used to webscrape each character's wiki page. Two things were scraped, the main text of the articles and the links in the text. From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
+The data utilized in this project comes from the [Harry Potter fandom wiki](https://harrypotter.fandom.com/wiki/Main_Page). This wiki covers the entire universe includes the original Harry Potter books and movies, the Fantastic Beasts movies, and a roleplaying game called Hogwarts Legacy. First, the Harry Potter wiki API was queried to obtain all characters in the universe. From these queries we gained information about a character's name, blood status (muggle, pure blood etc.), house, species, death time, alias, wiki-link, and gender. The wiki-links were then used to webscrape each character's wiki page. Two things were scraped, the main text of the articles and the links in the text. From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
+
+
 
 ???? Perhaps insert gif showing were the things we found ?????
 
 ## **Filtering the data**
 The original data set consisted of 4066 characters. However, some of the characters had little or no information attached. We concluded that if we had no information about a character or if their name included "unidentified", they were not relevant for the network. Furthermore, some of the data was actually the actors from the Harry Potter movies. Lastly, some nodes were groups of people, eg. Arthur Weasley's ten unidentified subordinates. We created an initial network to check the degree of the characters, to exclude characters with no links. To summarize, the following filters were applied to remove data:
 
-* If blood status, house, species, death time and alias were all "None"
-* If name started with "unidentified" 
-* If name was in a list of actors webscraped from [imdb](https://www.imdb.com/title/tt0241527/fullcredits#cast)
-* If the species was "Humans" indicating that the entry was a group
-* If character has degree 0 in the network
+* If blood status, house, species, death time and alias were all "None". Removed: ???? characters
+* If name started with "unidentified". Removed: ???? characters
+* If name was in a list of actors webscraped from [imdb](https://www.imdb.com/title/tt0241527/fullcredits#cast). Removed: ???? characters
+* If the species was "Humans" indicating that the entry was a group. Removed: ???? characters
+* If character has degree 0 in the network. Removed: ??? characters
 
 After these filters, the data consisted of ???? characters.
 
@@ -27,11 +29,11 @@ To gain insight into the data we have created a few visualizations. Firstly, we 
 
 | Top 5 Species  | Count |
 |---|---|
-| Human | 3096 |
-| Goblin | 31 |
-| House-elf | 20 |
-| Human (formerly), Ghost | 19 |
-| Giant | 12 |
+| Human | ??? |
+| Goblin | ??? |
+| House-elf | ??? |
+| Human (formerly), Ghost | ??? |
+| Giant | ??? |
 
 </td><td>
 
