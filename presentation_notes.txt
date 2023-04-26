@@ -18,6 +18,6 @@ Plot In-degree og out-degree
 Vis top 10 characters based on in and out-degree
 Assortativity
 Modularity
-Random network
+Random network (plot in-degree og out-degree) og sammenlign med eget netværk
 Personlige wordclouds
 Gif af webscraping lokationer
