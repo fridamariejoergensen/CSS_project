@@ -38,7 +38,7 @@ To gain insight into the data we have created a few visualizations. Firstly, we 
 <img src="/images/species_wordcloud.png"     />
 
 </td></tr> </table>
-<i>Figur ???. The count of the top species and a wordcloud, where the size of a species represents the count. The wize of the words are not linearly scaled, as "Human" would then be the only visible word.</i>
+<i>Figur ???. The count of the top species and a wordcloud, where the size of a species represents the count. The size of the words are not linearly scaled, as "Human" would then be the only visible word.</i>
 
 > Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
 
