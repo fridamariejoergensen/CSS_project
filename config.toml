@@ -1,13 +1,13 @@
 baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
-description = "This is a project description"
+title = "The network of Harry Potter characters"
+description = "This is the web page explaining the results of an investigation of the Harry Potter universe."
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Henrik Nielsen", "Inga Jensen", "Mikkel Andersen"]
+    authors = ["Frida Marie Jørgensen", "Cecilie Dahl Hvilsted", "Marie Juhl Jørgensen"]
     notebook = "/explainer-notebook.html"
-    data = "https://drive.google.com"
-    github = "https://github.com/peterampazzo/project-website-template"
+    data = "https://harrypotter.fandom.com/wiki/Main_Page"
+    github = "https://github.com/fridamariejoergensen/CSS_project"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
