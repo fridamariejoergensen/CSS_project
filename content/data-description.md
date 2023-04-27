@@ -56,6 +56,6 @@ In the Harry Potter books and movies, the division of characters into houses at 
 
 <img src="/images/houses_count.png"     />
 
-<i>Figur ???. The count of the characters in each house. ??? characters are excluded as their house was unknown (None), meaning their past is unknown or they never went to a school.</i>
+<i>Figur ???. The count of the characters in each house. 1398 characters are excluded as their house was unknown (None), meaning their past is unknown or they never went to a school.</i>
 
 A clear tendency to see from the data is that houses 'Griffyndor' and 'Slytherin' holds the most members, approximately 100 and 120. This makes a lot of sense given that a main theme in the Harry Potter books and movies is the feud between these two houses. Furthermore, 'Hufflepuff' and 'Ravenclaw' are also represented well with around 60 characters each, whereas the 'non-Hogwarts' houses have very few members. This holds exactly with our expectation of the universe, as it is centered around Hogwarts.
