@@ -46,36 +46,36 @@ The degree of a node describes how many edges are connected to a node. With dire
     <td>Mean</td>
     <td>4.5</td>
     <td>4.5</td>
-    <td>???</td>
-    <td>???</td>
+    <td>4.5</td>
+    <td>4.5</td>
   </tr>
   <tr>
     <td>Median</td>
     <td>1</td>
     <td>2</td>
-    <td>???</td>
-    <td>???</td>
+    <td>4</td>
+    <td>4</td>
   </tr>
   <tr>
     <td>Mode</td>
     <td>0</td>
     <td>1</td>
-    <td>???</td>
-    <td>???</td>
+    <td>4</td>
+    <td>4</td>
   </tr>
   <tr>
     <td>Min</td>
     <td>0</td>
     <td>0</td>
-    <td>???</td>
-    <td>???</td>
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
     <td>Max</td>
     <td>210</td>
     <td>92</td>
-    <td>???</td>
-    <td>???</td>
+    <td>13</td>
+    <td>13</td>
   </tr>
 </tbody>
 </table>
@@ -136,7 +136,7 @@ COMMENT .......
 ## **Clustering coefficient**
 To investigate whether there are groupings in the Harry Potter network, we calculate the clustering coefficient. The clustering coefficient describes how much nodes tend to cluster together. A high clustering coefficient would mean that there are groups where the nodes have a high density of edges between them. Since our network is a weighted, directed graph, we used the [networkx clustering function](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.cluster.clustering.html#networkx.algorithms.cluster.clustering) which handles both the weight and the directed edges, when calculating the clustering coefficient. The average clustering coefficient is:
 $$\langle C \rangle_{\text{HP network}} = $$
-$$\langle C \rangle_{\text{Random network}} = $$
+$$\langle C \rangle_{\text{Random network}} = 0.0027
 (As expected the Harry Potter network has a higher clustering coefficient than the random network does.????) 
 
 The top 5 characters based on the clustering coefficient can be seen below:
