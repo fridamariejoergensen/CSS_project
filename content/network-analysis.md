@@ -21,7 +21,7 @@ If the network is sized by strength, it is clear that the most connected charact
 ## **Random network**
 To better understand the Harry Potter network, we have created a random network as a baseline for comparison. The random network is created with the same number of nodes and edges. Since the Harry Potter network is directed the random network is as well. Furthermore, the weights of each edge is considered when calculating the total number of edges, meaning each weight number counts as an edge in the random network. The random network can be seen below:
 
-???????? Insert random network ??????????????????
+<img src="/images/random_network.png"     />
 
 
 ## **Degree analysis**
