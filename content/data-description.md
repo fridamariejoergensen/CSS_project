@@ -59,3 +59,18 @@ In the Harry Potter books and movies, the division of characters into houses at 
 <i>Figur ???. The count of the characters in each house. 1398 characters are excluded as their house was unknown (None), meaning their past is unknown or they never went to a school.</i>
 
 A clear tendency to see from the data is that houses 'Griffyndor' and 'Slytherin' holds the most members, approximately 100 and 120. This makes a lot of sense given that a main theme in the Harry Potter books and movies is the feud between these two houses. Furthermore, 'Hufflepuff' and 'Ravenclaw' are also represented well with around 60 characters each, whereas the 'non-Hogwarts' houses have very few members. This holds exactly with our expectation of the universe, as it is centered around Hogwarts.
+
+## **Community analysis**
+We have an expectation that the network will be divided into communities corresponding to their houses. To investigate this hypothesis, we divided the network into communities based on their houses. As comparison, we found communities with the Louvain algorithm. For both of these community divisions we calculated the modularity, which represents the strength of a community division. A high modularity indicates that the nodes within a community are highly connected and sparsely connected to nodes outside of the community. Modularity can be used as a measure to estimate which community division captures a network structure best.
+$$ Q_{\text{House communities}} = 0.13
+$$ Q_{\text{Louvain communities}} = 0.60
+
+When computing the communities, the split into communities depending on 'House' holds 8 different communities, respectively 'Gryffindor', 'Slytherin', 'Hufflepuff', 'Ravenclaw', 'Thunderbird', 'Pukwudgie' and 'Wampus'. This is a very small number of communities compared to the Louvain communities, of which there are 364.
+
+The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low.
+
+<img src="/images/houses_communities.png"     />
+
+<i>Figur ???. Distribution of community sizes for both 'House' and Louvain.</i>¨
+
+From the figure above it is clear that both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear.
