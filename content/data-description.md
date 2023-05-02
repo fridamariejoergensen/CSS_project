@@ -27,7 +27,7 @@ The original data set consisted of 4066 characters. However, some of the charact
 * If the species was "Humans" indicating that the entry was a group. Removed: 578 characters
 * If character has degree 0 in the network. Removed: 2310 characters
 
-After these filters, the data consisted of 1751 characters.
+After these filters, the data consisted of 1752 characters.
 
 ## **Visualization of data**
 To gain insight into the data we have created a few visualizations. Firstly, we see that the data is mostly populated by humans, however there are many species represented in the data set. The total number of different species is 182. The distribution of the top species and a wordcloud showing the different species can be seen below.
