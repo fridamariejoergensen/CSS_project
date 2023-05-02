@@ -6,7 +6,7 @@ next: text-analysis
 
 To investigate the connections between the Harry Potter characters the universe can be modelled as a social network. From the Harry Potter wiki API, we have access to all characters. Based on the wiki hyperlinks between the characters, a network of nodes and edges was be created. Each node is a character and the references are edges. The network is modelled as a directed, weighted graph. If character 1 references character 2, an edge is created with a direction from character 1 to 2. The edge is weighted by the number of times the wiki page of character 1 references character 2. 
 
-After having filtered the data like explained in the [Data Description](../data-description), there are 1752 characters left, meaning the network has 1752 nodes. Based on the hyperlink references, the network has 7873 edges. The network can be seen below:
+After having filtered the data like explained in the [Data Description](../data-description), there are 1751 characters left, meaning the network has 1751 nodes. Based on the hyperlink references, the network has 7853 edges. The network can be seen below:
 
 <img src="/images/total_network.png"     />
 <i>Figur ???. TEXT</i>
@@ -219,12 +219,15 @@ We could investigate the distribution and average shortest path of the Harry Pot
 ## **Closeness centrality**
 We could investigate the distribution and average closeness centrality of the Harry Potter network compared to the random network. ?????????
 
-# **Community analysis**
-We have an expectation that the network will be divided into communities corresponding to their houses. To investigate this hypothesis, we divided the network into communities based on their houses. As comparison, we found communities with the Louvain algorithm. For both of these community divisions we calculated the modularity, which represents the strength of a community division. A high modularity indicates that the nodes within a community are highly connected and sparsely connected to nodes outside of the community. Modularity can be used as a measure to estimate which community division captures a network structure best.
-$$ Q_{\text{House communities}} = $$
-$$ Q_{\text{Louvain communities}} = $$
+average closeness centrality:
+$$\langle C \rangle_{\text{HP network}} = 0.064
+$$\langle C \rangle_{\text{Random network}} = 0.19
 
-(The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low.)
+distribution:
+<img src="/images/closeness_cent_distribution_network.png"     />
+<i>Figur ???. TEXT</i>
+
+COMMENT
 
 ## **Double edge swap**
 Could use double edge swap to see if modularity is statistically different from zero.
