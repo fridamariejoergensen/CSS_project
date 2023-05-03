@@ -23,60 +23,208 @@ In order to do various natural language processing(NLP) tasks, we start by token
 <img src="/images/House_wordclouds.png"     />
 
 
-| Top 10 words for Gryffindor  | TF-IDF Score |
-|---|---|
-| harry | 0.5861462680076663 |
-| ron | 0.2347650556979932 |
-| hogwarts | 0.22301403005913825 |
-| hermione | 0.22199220174271608 |
-| dumbledore | 0.1720503427775826 |
-| weasley | 0.1438223355364202 |
-| year | 0.14011820788938983 |
-| school | 0.13564770900504286 |
-| potter | 0.13168812427890694 |
-| voldemort | 0.11661615661167997 |
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; margin-right: 10px;">
+    <table>
+      <caption>Top 10 words for Gryffindor</caption>
+      <tr>
+        <th>Word</th>
+        <th>TF-IDF Score</th>
+      </tr>
+      <tr>
+        <td>harry</td>
+        <td>0.5861462680076663</td>
+      </tr>
+      <tr>
+        <td>ron</td>
+        <td>0.2347650556979932</td>
+      </tr>
+      <tr>
+        <td>hogwarts</td>
+        <td>0.22301403005913825</td>
+      </tr>
+      <tr>
+        <td>hermione</td>
+        <td>0.22199220174271608</td>
+      </tr>
+      <tr>
+        <td>dumbledore</td>
+        <td>0.1720503427775826</td>
+      </tr>
+      <tr>
+        <td>weasley</td>
+        <td>0.1438223355364202</td>
+      </tr>
+      <tr>
+        <td>year</td>
+        <td>0.14011820788938983</td>
+      </tr>
+      <tr>
+        <td>school</td>
+        <td>0.13564770900504286</td>
+      </tr>
+      <tr>
+        <td>potter</td>
+        <td>0.13168812427890694</td>
+      </tr>
+      <tr>
+        <td>voldemort</td>
+        <td>0.11661615661167997</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="display: inline-block; vertical-align: top;">
+    <table>
+      <caption>Top 10 words for Slytherin</caption>
+      <tr>
+        <th>Word</th>
+        <th>TF-IDF Score</th>
+      </tr>
+      <tr>
+        <td>harry</td>
+        <td>0.3269527068515053</td>
+      </tr>
+      <tr>
+        <td>voldemort</td>
+        <td>0.2878410851562119</td>
+      </tr>
+      <tr>
+        <td>black</td>
+        <td>0.23671478228654724</td>
+      </tr>
+      <tr>
+        <td>hogwarts</td>
+        <td>0.23543662471480561</td>
+      </tr>
+      <tr>
+        <td>snape</td>
+        <td>0.2165198926530297</td>
+      </tr>
+      <tr>
+        <td>death</td>
+        <td>0.18967858364645576</td>
+      </tr>
+      <tr>
+        <td>draco</td>
+        <td>0.16743864189815166</td>
+      </tr>
+      <tr>
+        <td>family</td>
+        <td>0.1633485376685785</td>
+      </tr>
+      <tr>
+        <td>school</td>
+        <td>
+    <tr>
+     <tr>
+        <td>Slytherin</td>
+        <td>0.14980006740811735</td>
+    <tr>
+  </table>
+  </div>
 
 
-| Top 10 words for Slytherin  | TF-IDF Score |
-|---|---|
-| harry | 0.3269527068515053 |
-| voldemort | 0.2878410851562119 |
-| black | 0.23671478228654724 |
-| hogwarts | 0.23543662471480561 |
-| snape | 0.2165198926530297 |
-| death | 0.18967858364645576 |
-| draco | 0.16743864189815166 |
-| family | 0.1633485376685785 |
-| school | 0.15414580315203885 |
-| slytherin | 0.14980006740811735 |
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; margin-right: 10px;">
+    <table>
+      <caption>Top 10 words for Hufflepuff</caption>
+      <tr>
+        <th>Word</th>
+        <th>TF-IDF Score</th>
+      </tr>
+      <tr>
+        <td>newt</td>
+        <td>0.31767164296338185</td>
+      </tr>
+      <tr>
+        <td>harry</td>
+        <td>0.27576602197672295</td>
+      </tr>
+      <tr>
+        <td>hogwarts</td>
+        <td>0.27509012486403495</td>
+      </tr>
+      <tr>
+        <td>school</td>
+        <td>0.21966656162361511</td>
+      </tr>
+      <tr>
+        <td>year</td>
+        <td>0.20141733958103786 </td>
+      </tr>
+      <tr>
+        <td>hufflepuff</td>
+        <td>0.16491889549588334</td>
+      </tr>
+      <tr>
+        <td>jacobs</td>
+        <td>0.15883582148169093</td>
+      </tr>
+      <tr>
+        <td>penny</td>
+        <td>0.15613223303093873</td>
+      </tr>
+      <tr>
+        <td>tonks</td>
+        <td>0.1541045416928746</td>
+      </tr>
+      <tr>
+        <td>sibling</td>
+        <td>0.15207685035481047</td>
+      </tr>
+    </table>
+  </div>
 
-
-| Top 10 words for Hufflepuff  | TF-IDF Score |
-|---|---|
-| newt | 0.31767164296338185 |
-| harry | 0.27576602197672295 |
-| hogwarts | 0.27509012486403495 |
-| school | 0.21966656162361511 |
-| year | 0.20141733958103786 |
-| hufflepuff | 0.16491889549588334 |
-| jacobs | 0.15883582148169093 |
-| penny | 0.15613223303093873 |
-| tonks | 0.1541045416928746 |
-| sibling | 0.15207685035481047 |
-
-
-| Top 10 words for Ravenclaw  | TF-IDF Score |
-|---|---|
-| harry | 0.41612785521950924 |
-| hogwarts | 0.28492216362015854 |
-| school | 0.26241138319870133 |
-| year | 0.21031500565190034 |
-| luna | 0.19680853739902598 |
-| ravenclaw | 0.17108193120307488 |
-| potter | 0.14599849016202254 |
-| lockhart | 0.1414963340777311 |
-| professor | 0.13763734314833845 |
-| students | 0.12863303097975556 |
+  <div style="display: inline-block; vertical-align: top;">
+    <table>
+      <caption>Top 10 words for Ravenclaw</caption>
+      <tr>
+        <th>harry</th>
+        <th>TF-IDF Score</th>
+      </tr>
+      <tr>
+        <td>harry</td>
+        <td>0.41612785521950924</td>
+      </tr>
+      <tr>
+        <td>hogwarts</td>
+        <td>0.28492216362015854</td>
+      </tr>
+      <tr>
+        <td>school</td>
+        <td>0.26241138319870133</td>
+      </tr>
+      <tr>
+        <td>year</td>
+        <td>0.21031500565190034</td>
+      </tr>
+      <tr>
+        <td>luna</td>
+        <td>0.19680853739902598</td>
+      </tr>
+      <tr>
+        <td>death</td>
+        <td>0.18967858364645576</td>
+      </tr>
+      <tr>
+        <td>draco</td>
+        <td>0.16743864189815166</td>
+      </tr>
+      <tr>
+        <td>family</td>
+        <td>0.1633485376685785</td>
+      </tr>
+      <tr>
+        <td>school</td>
+        <td>
+    <tr>
+     <tr>
+        <td>Slytherin</td>
+        <td>0.14980006740811735</td>
+    <tr>
+  </table>
+  </div>
 
 
 
