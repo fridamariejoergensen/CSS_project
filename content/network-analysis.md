@@ -164,7 +164,7 @@ When removing coefficients of 1 and 0, the top 5 clustering coefficients and the
 COMMENT ????
 
 ## **Assortativity**
-The assortativity coefficient describes the correlation between the degrees of the nodes. It compares the degrees of two connected nodes to evaluate if same degree nodes are more likely to be connected or not. In the case of out directed network, the assortativity is calculated based on either in- or out-degree on the source node and target node. This means that the coefficient eg. calculates if nodes of high in-degree are highly connected to other nodes with a high in-degree. So the coefficient can be calculated on four combinations of comparing node degrees (in to in, in to out, out to in, and out to out). These four assortativity coefficients have been calculated:
+The assortativity coefficient describes the correlation between the degrees of the nodes. It compares the degrees of two connected nodes to evaluate if same degree nodes are more likely to be connected or not. In the case of out directed network, the assortativity is calculated based on either in- or out-degree on the source node and neighbouring target node. Here source node refers to a node that has a directed edge towards a another node, the neighbouring target node. This means that the coefficient eg. calculates if nodes of high in-degree often points to other nodes with a high in-degree. So the coefficient can be calculated on four combinations of comparing node degrees (in to in, in to out, out to in, and out to out). These four assortativity coefficients have been calculated:
 
 Har vægt en påvirkning ???
 
@@ -180,9 +180,9 @@ Har vægt en påvirkning ???
 <tbody>
   <tr>
     <td></td>
-    <td colspan="2">Target node</td>
+    <td colspan="2">Neighbour node</td>
     <td></td>
-    <td colspan="2">Target node</td>
+    <td colspan="2">Neighbour node</td>
   </tr>
   <tr>
     <td>Source node</td>
