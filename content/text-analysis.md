@@ -22,13 +22,11 @@ In order to do various natural language processing(NLP) tasks, we start by token
 
 We see that tokenizing the text drastically reduced the amount of words in each charecters wikipedia text. This makes sense, since Wikipedia articles often are written in a very formal style and aim to provide comprehensive and neutral information on a particular topic. As a result, they often contain a lot of common and generic words known as stopwords. By tokenizing the text we also remove things such as punctuation, numbers, and special characters, which also plays a part in the reduction.
 
-When calculating the TF-IDF score, the term frequency is weighted by the inverse document frequency. Tokens with high scores are typically more specific to the community and used less frequently in general. These scores help us identify words that distinguish communities, providing insight into what makes each community unique. Below are shown wordclouds for the four main houses of Hogwarts. The higher the TF-IDF score - the bigger the word. 
+When calculating the TF-IDF score, the term frequency is weighted by the inverse document frequency. Tokens with high scores are typically more specific to the community and used less frequently in general. These scores help us identify words that distinguish communities, providing insight into what makes each community unique. Below are shown wordclouds for the four main houses of Hogwarts "Gryffindor", "Slytherin", "Hufflepuff" & "Ravenclaw". The higher the TF-IDF score - the bigger the word. 
 
 <img src="/images/House_wordclouds.png"     />
 
-COMMENT MORE All four communities have the words “harry”, “hogwarts”, and “school” in their top 10 words, indicating that these words are important to all four communities.
-
-However, there are also some differences between the communities. For example, Gryffindor’s top 10 words include “ron”, “hermione”, “dumbledore”, and “weasley”, while Slytherin’s top 10 words include “voldemort”, “black”, “snape”, and “draco”. Hufflepuff’s top 10 words include “newt”, “jacobs”, “penny”, and “tonks”, while Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”. COMMENT MORE 
+All four communities have the words “harry”, “hogwarts”, and “school” in their top 10 words, indicating that these words are important to all four communities, which makes sense since the whole universe and both movies and books are centered around the three subjects. The only house that doesn't have Harry as it's top TF-IDF word is Hufflepuff thas has the word "newt" instead. "newt" is short for "Newton Scamander" who is the main protagonist of the Fantastic Beasts film series. Since the house Hufflepuff does not play a significant role in the original Harry Potter universe and the Fantastic Beasts film series has been a huge spinoff, it isn't surprising that words from the expanded universe get to play a part in the house's wordcloud. In the tables below the top 10 words and scores for each house is presented.
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 1; margin-right: 10px;">
@@ -122,7 +120,7 @@ However, there are also some differences between the communities. For example, G
       </tr>
       <tr>
         <td>school</td>
-        <td>
+        <td>0.15414580315203885</td>
     <tr>
      <tr>
         <td>Slytherin</td>
@@ -211,28 +209,57 @@ However, there are also some differences between the communities. For example, G
         <td>0.19680853739902598</td>
       </tr>
       <tr>
-        <td>death</td>
-        <td>0.18967858364645576</td>
+        <td>ravenclaw</td>
+        <td>0.17108193120307488</td>
       </tr>
       <tr>
-        <td>draco</td>
-        <td>0.16743864189815166</td>
+        <td>potter</td>
+        <td>0.14599849016202254</td>
       </tr>
       <tr>
-        <td>family</td>
-        <td>0.1633485376685785</td>
+        <td>lockhart</td>
+        <td> 0.1414963340777311</td>
       </tr>
       <tr>
-        <td>school</td>
-        <td>
+        <td>professor</td>
+        <td>0.13763734314833845</td>
     <tr>
      <tr>
-        <td>Slytherin</td>
-        <td>0.14980006740811735</td>
+        <td>students</td>
+        <td>0.12863303097975556</td>
     <tr>
   </table>
   </div>
 
+We can see some overall differences between the communities.
+
+<p style="color:#7F0909;"> For example, Gryffindor’s top 10 words also include “ron”, “hermione”, “dumbledore”, and “weasley”. All characters associated with the Gryffindor house. Ron and Hermione are both Gryffindor students and friends of Harry, while Albus Dumbledore is the headmaster of Hogwarts and a former Gryffindor student aswell. The Weasley family is closely associated with the Gryffindor house, as it is said that the Weasleys are always assigned to the house by the sorting hat.</p>
+
+<p style="color:#1A472A;">Slytherin’s top 10 words include “voldemort”, “black”, “snape”, and “draco”. Voldemort, also known as Tom Riddle, was a Slytherin student and the main antagonist of the series. Severus Snape was the Potions Master and Head of Slytherin house at Hogwarts. Draco Malfoy was a Slytherin student and Harry Potter’s rival. The Black family, including Sirius Black and Bellatrix Lestrange, were also closely associated with the Slytherin house. The word black could also be presenting more in this house document as a reference to dark/black magic, which is believed to be the evil/unethical kind of magic and Slytherin has historically been the most evil/unethical house.</p>
+
+<p style="color:#FFC500;">Hufflepuff’s top 10 words include “jacobs”, "sibling", “penny”, and “tonks”. The words "penny" and "tonks" are also from the Fantastic Beasts universe. The words "jacobs sibling" is also within Hufllepuff's top 10."jacobs sibling" stems from the role-playing video game "Harry Potter: Hogwarts Mystery", where you create your own chareter and follow your brother Jacob around doing different magic quests. Beacuse the game is so long and complex, Jacobs Siblings wikipage is one of the longest ones, that we have webscraped.</p>
+
+<p style="color:#0A5EA8;">Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”.Luna was a Ravenclaw student, Gilderoy Lockhart was a former Ravenclaw student and Defense Against the Dark Arts professor at Hogwarts, and the word “Professor” may be associated with Ravenclaw due to the house’s reputation for valuing intelligence and academic achievement.</p>
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.
+<img src="/images/Harry James Potter.png" />
+
+<img src="/images/Ronald Bilius Weasley.png"     />
+
+<img src="/images/Hermione Jean Granger.png"   />
+
+<img src="/images/Tom Marvolo Riddle.png"     />
+
+<img src="/images/Sirius Black III.png"     />
+
+<img src="/images/Severus Snape.png"     />
+
+<img src="/images/Arthur Weasley.png"     />
+
+<img src="/images/Albus Dumbledore.png"  />
+
+<img src="/images/Draco Lucius Malfoy.png"     />
+
+<img src="/images/Ginevra Molly Potter (née Weasley).png"     />
+
+
