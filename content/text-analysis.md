@@ -20,8 +20,15 @@ In order to do various natural language processing(NLP) tasks, we start by token
 
 > The average length of the tokenized wiki texts is 405.92
 
+We see that tokenizing the text drastically reduced the amount of words in each charecters wikipedia text. This makes sense, since Wikipedia articles often are written in a very formal style and aim to provide comprehensive and neutral information on a particular topic. As a result, they often contain a lot of common and generic words known as stopwords. By tokenizing the text we also remove things such as punctuation, numbers, and special characters, which also plays a part in the reduction.
+
+When calculating the TF-IDF score, the term frequency is weighted by the inverse document frequency. Tokens with high scores are typically more specific to the community and used less frequently in general. These scores help us identify words that distinguish communities, providing insight into what makes each community unique. Below are shown wordclouds for the four main houses of Hogwarts. The higher the TF-IDF score - the bigger the word. 
+
 <img src="/images/House_wordclouds.png"     />
 
+COMMENT MORE All four communities have the words “harry”, “hogwarts”, and “school” in their top 10 words, indicating that these words are important to all four communities.
+
+However, there are also some differences between the communities. For example, Gryffindor’s top 10 words include “ron”, “hermione”, “dumbledore”, and “weasley”, while Slytherin’s top 10 words include “voldemort”, “black”, “snape”, and “draco”. Hufflepuff’s top 10 words include “newt”, “jacobs”, “penny”, and “tonks”, while Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”. COMMENT MORE 
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 1; margin-right: 10px;">
