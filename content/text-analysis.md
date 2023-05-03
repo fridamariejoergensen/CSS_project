@@ -80,4 +80,23 @@ In order to do various natural language processing(NLP) tasks, we start by token
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.
+<img src="/images/Harry James Potter.png" />
+
+<img src="/images/Ronald Bilius Weasley.png"     />
+
+<img src="/images/Hermione Jean Granger.png"   />
+
+<img src="/images/Tom Marvolo Riddle.png"     />
+
+<img src="/images/Sirius Black III.png"     />
+
+<img src="/images/Severus Snape.png"     />
+
+<img src="/images/Arthur Weasley.png"     />
+
+<img src="/images/Albus Dumbledore.png"  />
+
+<img src="/images/Draco Lucius Malfoy.png"     />
+
+<img src="/images/Ginevra Molly Potter (née Weasley).png"     />
+
