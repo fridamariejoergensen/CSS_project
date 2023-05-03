@@ -263,3 +263,5 @@ COMMENT
 
 ## **Double edge swap**
 Could use double edge swap to see if modularity is statistically different from zero.
+
+ <img src="/images/LYN.png" width="50" height="50" />

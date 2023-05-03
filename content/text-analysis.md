@@ -233,7 +233,8 @@ All four communities have the words “harry”, “hogwarts”, and “school�
 
 We can see some overall differences between the communities.
 
-<p style="color:#7F0909;"> For example, Gryffindor’s top 10 words also include “ron”, “hermione”, “dumbledore”, and “weasley”. All characters associated with the Gryffindor house. Ron and Hermione are both Gryffindor students and friends of Harry, while Albus Dumbledore is the headmaster of Hogwarts and a former Gryffindor student aswell. The Weasley family is closely associated with the Gryffindor house, as it is said that the Weasleys are always assigned to the house by the sorting hat.</p>
+<p style="color:#7F0909;"> For example, Gryffindor’s top 10 words also include “ron”, “hermione”, “dumbledore”, and “weasley”. All characters associated with the Gryffindor house. Ron and Hermione are both Gryffindor students and friends of Harry, while Albus Dumbledore is the headmaster of Hogwarts and a former Gryffindor student aswell.
+ The Weasley family is closely associated with the Gryffindor house, as it is said that the Weasleys are always assigned to the house by the sorting hat.</p>
 
 <p style="color:#1A472A;">Slytherin’s top 10 words include “voldemort”, “black”, “snape”, and “draco”. Voldemort, also known as Tom Riddle, was a Slytherin student and the main antagonist of the series. Severus Snape was the Potions Master and Head of Slytherin house at Hogwarts. Draco Malfoy was a Slytherin student and Harry Potter’s rival. The Black family, including Sirius Black and Bellatrix Lestrange, were also closely associated with the Slytherin house. The word black could also be presenting more in this house document as a reference to dark/black magic, which is believed to be the evil/unethical kind of magic and Slytherin has historically been the most evil/unethical house.</p>
 
@@ -267,22 +268,4 @@ It is also possible to make individual wordclouds for the charecters. We have ch
 
 
 
-<head>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-</head>
-
-<div class="slick">
-  <img src="/images/Draco Lucius Malfoy.png" alt="Image 1">
-  <img src="/images/Draco Lucius Malfoy.png" alt="Image 2">
-  <img src="/images/Draco Lucius Malfoy.png" alt="Image 3">
-</div>
-
-<script type="text/javascript">
-  $(d
-  ocument).ready(function(){
-    $('.slick').slick();
-  });
-</script>
+ <img src="/images/LYN.png" width="50" height="50" />
