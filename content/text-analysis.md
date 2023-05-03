@@ -242,6 +242,9 @@ We can see some overall differences between the communities.
 <p style="color:#0A5EA8;">Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”.Luna was a Ravenclaw student, Gilderoy Lockhart was a former Ravenclaw student and Defense Against the Dark Arts professor at Hogwarts, and the word “Professor” may be associated with Ravenclaw due to the house’s reputation for valuing intelligence and academic achievement.</p>
 
 
+It is also possible to make individual wordclouds for the charecters. We have chosen to generate one for each of the charecters that are on the list of top 10 charecters in term of indegree in our network graph. This is because the indegree is a good indication of it means that they have a high number of incoming connections from other characters in the network. This could indicate that the character is popular or influential within the network.
+
+
 <img src="/images/Harry James Potter.png" />
 
 <img src="/images/Ronald Bilius Weasley.png"     />
@@ -263,3 +266,23 @@ We can see some overall differences between the communities.
 <img src="/images/Ginevra Molly Potter (née Weasley).png"     />
 
 
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<div class="slick">
+  <img src="/images/Draco Lucius Malfoy.png" alt="Image 1">
+  <img src="/images/Draco Lucius Malfoy.png" alt="Image 2">
+  <img src="/images/Draco Lucius Malfoy.png" alt="Image 3">
+</div>
+
+<script type="text/javascript">
+  $(d
+  ocument).ready(function(){
+    $('.slick').slick();
+  });
+</script>

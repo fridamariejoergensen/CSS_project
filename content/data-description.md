@@ -14,9 +14,19 @@ The data utilized in this project comes from the [Harry Potter fandom wiki](http
 * Gender
 * Wiki-link
 
-The wiki-links were then used to webscrape each character's wiki page. Two things were scraped, the main text of the articles and the links in the text. From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
+The wiki-links were then used to webscrape each character's wiki page. Two things were scraped from the wiki-pages, the main text of the articles:
 
-???? Perhaps insert gif showing were the things we found ?????
+<img src="/images/Text.png"     />
+
+
+and the links in the text:
+
+<img src="/images/All links.png"     />
+
+
+From the links we counted the number of references to other characters. This data was saved for creating edges in a network.
+
+<img src="/images/Charecter links.png"     />
 
 ## **Filtering the data**
 The original data set consisted of 4066 characters. However, some of the characters had little or no information attached. We concluded that if we had no information about a character or if their name included "unidentified", they were not relevant for the network. Furthermore, some of the data was actually the actors from the Harry Potter movies. Lastly, some nodes were groups of people, eg. Arthur Weasley's ten unidentified subordinates. We created an initial network to check the degree of the characters, to exclude characters with no links. To summarize, the following filters were applied to remove data:
