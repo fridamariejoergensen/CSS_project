@@ -22,10 +22,10 @@ The wiki-links were then used to webscrape each character's wiki page. Two thing
 The original data set consisted of 4066 characters. However, some of the characters had little or no information attached. We concluded that if we had no information about a character or if their name included "unidentified", they were not relevant for the network. Furthermore, some of the data was actually the actors from the Harry Potter movies. Lastly, some nodes were groups of people, eg. Arthur Weasley's ten unidentified subordinates. We created an initial network to check the degree of the characters, to exclude characters with no links. To summarize, the following filters were applied to remove data:
 
 * If blood status, house, species, death time and alias were all "None". Removed: 91 characters
-* If name started with "unidentified". Removed: 522 characters
-* If name was in a list of actors webscraped from [imdb](https://www.imdb.com/title/tt0241527/fullcredits#cast). Removed: 2313 characters
-* If the species was "Humans" indicating that the entry was a group. Removed: 578 characters
-* If character has degree 0 in the network. Removed: 2310 characters
+* If name started with "unidentified". Removed: 431 characters
+* If name was in a list of actors webscraped from [imdb](https://www.imdb.com/title/tt0241527/fullcredits#cast). Removed: 4 characters
+* If the species was "Humans" indicating that the entry was a group. Removed: 56 characters
+* If character has degree 0 in the network. Removed: 1731 characters
 
 After these filters, the data consisted of 1751 characters.
 
