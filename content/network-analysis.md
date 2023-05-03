@@ -186,7 +186,11 @@ When removing coefficients of 1 and 0, the top 5 clustering coefficients and the
 The table states that it is not the most central characters, that has the largest clustering coefficient. This fulfills the expectation since the main characters are expected to have a large amount of both incoming and outgoing edges (and all of the neighbors would likely not connected). Despite the characters with clustering coefficient equal to 1, the character with the greatest clustering coefficient is Lucy Weasley. A great deal of her edges is characters in the 'Weasley' family, and in that case it makes sense that everyone else in the family is connected as well. Of her 51 edges, 33 are Weasleys as well.
 
 ## **Assortativity**
+<<<<<<< HEAD
 The assortativity coefficient describes the correlation between the degrees of the nodes. It compares the degrees of two connected nodes to evaluate if same degree nodes are more likely to be connected or not. In the case of out directed network, the assortativity is calculated based on either in- or out-degree on the source node and neighbor node. This means that the coefficient eg. calculates if nodes of high in-degree are highly connected to other nodes with a high in-degree. So the coefficient can be calculated on four combinations of comparing node degrees (in to in, in to out, out to in, and out to out). These four assortativity coefficients have been calculated:
+=======
+The assortativity coefficient describes the correlation between the degrees of the nodes. It compares the degrees of two connected nodes to evaluate if same degree nodes are more likely to be connected or not. In the case of out directed network, the assortativity is calculated based on either in- or out-degree on the source node and neighbouring target node. Here source node refers to a node that has a directed edge towards a another node, the neighbouring target node. This means that the coefficient eg. calculates if nodes of high in-degree often points to other nodes with a high in-degree. So the coefficient can be calculated on four combinations of comparing node degrees (in to in, in to out, out to in, and out to out). These four assortativity coefficients have been calculated:
+>>>>>>> abc00ff28db857400316f21bfe042bc4cbc698c9
 
 Har vægt en påvirkning ???
 
@@ -202,9 +206,15 @@ Har vægt en påvirkning ???
 <tbody>
   <tr>
     <td></td>
+<<<<<<< HEAD
     <td colspan="2">Neighbor node</td>
     <td></td>
     <td colspan="2">Neighbor node</td>
+=======
+    <td colspan="2">Neighbour node</td>
+    <td></td>
+    <td colspan="2">Neighbour node</td>
+>>>>>>> abc00ff28db857400316f21bfe042bc4cbc698c9
   </tr>
   <tr>
     <td>Source node</td>
