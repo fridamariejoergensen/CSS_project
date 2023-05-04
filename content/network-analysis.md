@@ -6,10 +6,10 @@ next: text-analysis
 
 To investigate the connections between the Harry Potter characters the universe can be modelled as a social network. From the Harry Potter wiki API, we have access to all characters. Based on the wiki hyperlinks between the characters, a network of nodes and edges was be created. Each node is a character and the references are edges. The network is modelled as a directed, weighted graph. If character 1 references character 2, an edge is created with a direction from character 1 to 2. The edge is weighted by the number of times the wiki page of character 1 references character 2. 
 
-After having filtered the data like explained in the [Data Description](../data-description), there are 1751 characters left, meaning the network has 1751 nodes. Based on the hyperlink references, the network has 7853 edges. The network can be seen below in figure 1:
+After having filtered the data like explained in the [Data Description](../data-description), there are 1751 characters left, meaning the network has 1751 nodes. Based on the hyperlink references, the network has 7852 edges. The network can be seen below in figure 1:
 
 <img src="/images/total_network.png"     />
-<i>Figur 1. The nodes are colored based on the table below.</i>
+<i>Figure 1. The nodes are colored based on the table below.</i>
 
 <table>
 <tr><td>
@@ -32,19 +32,15 @@ The nodes are colored according to the characters 'House' attribute, meaning whi
 In figure 2 the network is sized by strength, meaning the nodes are arranged according to the sum of all weights of incoming edges. Then it is clear that the most connected character in the Harry Potter universe is 'Harry Potter' as he has the largest sum of weigths of incoming edges. This is seen below:
 
 <img src="/images/network_sized_strength.png"     />
-<i>Figur 2. Nodes are sized by strength.</i>
+<i>Figure 2. Nodes are sized by strength.</i>
 
 ## **Random network**
-To better understand the Harry Potter network, we have created a random network as a baseline for comparison. The random network is created with the same number of nodes and edges. Since the Harry Potter network is directed the random network is as well. 
-
-<!---Despite the Harry Potter network being directed and weighted, the random network is both undirected and unweighted. EXPLAIN ??--->
-
-<!---Furthermore, the weights of each edge is considered when calculating the total number of edges, meaning each weight number counts as an edge in the random network. The random network can be seen below:-->
+To better understand the Harry Potter network, we have created a random network as a baseline for comparison. The random network is created with the same number of nodes and edges. Since the Harry Potter network is directed the random network is as well. The Harry Potter network is weighted as well, therefore the random network is assigned the weights of the edges in the Harry Potter network randomly. Thereby an both directed and weighted random graph is made.
 
 <img src="/images/random_network.png"     />
-<i>Figur 3. Random network visualized.</i>
+<i>Figure 3. Random network visualized and sized by strength.</i>
 
-The random network is much more clustered and the degree of each node is more equally distributed such that there are no outliers, as there is in the Harry Potter network.
+The random network is much more clustered and the degree of each node is more equally distributed such that there are no outliers, as there is in the Harry Potter network. At the same time the sum of incoming edge weights (strength) is more similar across all nodes.
 
 ## **Degree analysis**
 The degree of a node describes how many edges are connected to a node. With directed graphs we distinguish between edges going in and out of a node, referred to as in-degree and out-degree. Furthermore, with a weighted graph the weight of an edge is included in the degree, so we are dealing with weighted in- and out-degree. We have summarized some statistical metrics of the degrees found in the Harry Potter network and compare this to the random network.
@@ -107,7 +103,7 @@ As mentioned earlier, the degrees of the random network is more equally distribu
 We have plotted distribution of the in- and out-degrees of the nodes:
 
 <img src="/images/degree_distribution_network.png"     />
-<i>Figur 4. Distribution of in- and out-degree of all characters in the Harry Potter network.</i>
+<i>Figure 4. Distribution of in- and out-degree of all characters in the Harry Potter network.</i>
 
 From the plot it is apparent that the distribution of the character's degrees is heavy tailed. Since this is the case there must be a large inequality among both in-degrees and out-degrees. But since the line is not perfectly linear, this distribution does not fit all the way through. The slopes of both lines in the plot are negative, meaning that the most frequent occuring weights are small. Considering an example 'Tom Riddle', the values of his degrees occurs in the less frequent area, meaning that he must has a large both in-degree and out-degree.
 
@@ -149,14 +145,14 @@ The top characters based on in- and out-degree can be seen in the table below. E
 If the in-degree of all characters if plotted versus their respective out-degree, it is seen, that the characters with a low in-degree also have a low out-degree, as well as the opposite in both cases. Therefore a linear relationship can be added to the plot. This is shown below:
 
 <img src="/images/in_out_scatter.png"     />
-<i>Figur 5. A linear relationship between in- and out-degrees is found. </i>
+<i>Figure 5. A linear relationship between in- and out-degrees is found. </i>
 
 The tendency shown in figure 5 reveals, that for characters with a small in-degree often has a large out-degree, but with increasing in-degree comes also an increasing out-degree. Therefore the linear relationship fits better the larger the in-degree of the character.
 
 Since the graph is both directed and weighted according to how many times another character is referred to on their Harry Potter Wiki Fandom page, we would like to consider the distribution of edge weights among all characters. The plot is shown below, together with an indication of how many time Harry Potter is referred to on [Albus Dumbledore's page](https://harrypotter.fandom.com/wiki/Albus_Dumbledore?so=search) (Albus Dumbledore > Harry Potter), and the opposite direction (Harry Potter > Albus Dumbledore):
 
 <img src="/images/edge_weight_distribution_network.png"     />
-<i>Figur 6. Distribution of all edge weights in log-log scale.</i>
+<i>Figure 6. Distribution of all edge weights in log-log scale.</i>
 
 We can see that the distribution of all edge weights (both in- and out-edges) is heavy tailed as well, due to the almost straight line occuring in log-log scale. Since the slope of the line decreases as more weights are considered, it means that most edges has a small weight. But large edge weights occur infrequently, for instance the weight on the edge going from Harry Potter to Albus Dumbledore (the number of times Albus is referred to on Harry's wiki page).
 
@@ -186,13 +182,7 @@ When removing coefficients of 1 and 0, the top 5 clustering coefficients and the
 The table states that it is not the most central characters, that has the largest clustering coefficient. This fulfills the expectation since the main characters are expected to have a large amount of both incoming and outgoing edges (and all of the neighbors would likely not connected). Despite the characters with clustering coefficient equal to 1, the character with the greatest clustering coefficient is Lucy Weasley. A great deal of her edges is characters in the 'Weasley' family, and in that case it makes sense that everyone else in the family is connected as well. Of her 51 edges, 33 are Weasleys as well.
 
 ## **Assortativity**
-<<<<<<< HEAD
-The assortativity coefficient describes the correlation between the degrees of the nodes. It compares the degrees of two connected nodes to evaluate if same degree nodes are more likely to be connected or not. In the case of out directed network, the assortativity is calculated based on either in- or out-degree on the source node and neighbor node. This means that the coefficient eg. calculates if nodes of high in-degree are highly connected to other nodes with a high in-degree. So the coefficient can be calculated on four combinations of comparing node degrees (in to in, in to out, out to in, and out to out). These four assortativity coefficients have been calculated:
-=======
 The assortativity coefficient describes the correlation between the degrees of the nodes. It compares the degrees of two connected nodes to evaluate if same degree nodes are more likely to be connected or not. In the case of out directed network, the assortativity is calculated based on either in- or out-degree on the source node and neighbouring target node. Here source node refers to a node that has a directed edge towards a another node, the neighbouring target node. This means that the coefficient eg. calculates if nodes of high in-degree often points to other nodes with a high in-degree. So the coefficient can be calculated on four combinations of comparing node degrees (in to in, in to out, out to in, and out to out). These four assortativity coefficients have been calculated:
->>>>>>> abc00ff28db857400316f21bfe042bc4cbc698c9
-
-Har vægt en påvirkning ???
 
 <table>
 <thead>
@@ -206,15 +196,9 @@ Har vægt en påvirkning ???
 <tbody>
   <tr>
     <td></td>
-<<<<<<< HEAD
     <td colspan="2">Neighbor node</td>
     <td></td>
     <td colspan="2">Neighbor node</td>
-=======
-    <td colspan="2">Neighbour node</td>
-    <td></td>
-    <td colspan="2">Neighbour node</td>
->>>>>>> abc00ff28db857400316f21bfe042bc4cbc698c9
   </tr>
   <tr>
     <td>Source node</td>
@@ -229,24 +213,36 @@ Har vægt en påvirkning ???
     <td>0.04</td>
     <td>0.07</td>
     <td></td>
-    <td>???</td>
-    <td>???</td>
+    <td>0.020</td>
+    <td>0.021</td>
   </tr>
   <tr>
     <td>Out degree</td>
     <td>0.13</td>
     <td>0.20</td>
     <td></td>
-    <td>???</td>
-    <td>???</td>
+    <td>0.0030</td>
+    <td>0.00020</td>
   </tr>
 </tbody>
 </table>
 
-Comment on this ?????????????
+The values of assorsativity for the random network are very small, meaning that same degree nodes are not very likely to be connected. These values occur to be a bit higher for the Harry Potter network. COMMENT MORE !!!
 
 ## **Shortest path**
 We could investigate the distribution and average shortest path of the Harry Potter network compared to the random network. ?????????
+
+Harry Potter network: 
+Largest strongly connected subgraph in Harry Potter network is: 562
+Average shortest path in the largest connected component in Harry Potter network is: 3.659466763088283
+
+Random network:
+Largest strongly connected subgraph in random network is: 1717
+Average shortest path in the largest connected component in random network is: 5.149643697401414
+
+Distribution:
+<img src="/images/shortest_path_distribution.png.png"     />
+<i>Figure 7. Distribution of shortest paths in largest connected component.</i>
 
 ## **Closeness centrality**
 We could investigate the distribution and average closeness centrality of the Harry Potter network compared to the random network. ?????????
@@ -257,7 +253,7 @@ $$\langle C \rangle_{\text{Random network}} = 0.19
 
 distribution:
 <img src="/images/closeness_cent_distribution_network.png"     />
-<i>Figur ???. TEXT</i>
+<i>Figure 8. Distribution of closeness centrality in networks.</i>
 
 COMMENT
 
