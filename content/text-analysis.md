@@ -14,6 +14,10 @@ The shortest wiki text is 126 characters (with spaces) and belongs to the charac
 
 > The average length of a wiki text is 4486 characters (with spaces) and the median is 1004. For reference 4,500 characters is between 642 words and 1125 words.
 
+Becuase the distribution is so left skewed plotting it in log-scale helps with the visualization:
+
+<img src="images/Distribution_wiki_text_tokenized_ls.png" />
+
 In order to do various natural language processing(NLP) tasks, we start by tokenizing the text. We do this by removing URLs, punctuation marks, numbers, stopwords, and other unwanted tokens, in order to reduce their impact and to return a list of cleaned tokens that can be used for further NLP analysis. The distribution of the tokenized wiki texts can be seen below. 
 
 <img src="/images/Distribution_wiki_text_tokenized.png"     />
