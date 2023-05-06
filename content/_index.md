@@ -7,7 +7,7 @@ next: data-description
 
  <img src="/images/Hogwarts.jpg" />
 
-We will use the Harry Potter API to get all characters in the universe. To create the network, we will also use web scraping where Nodes are individuals, and edges are found through hyperlinks on each person's page on the Harry Potter Wiki. To populate the nodes with attributes we will use a Harry Potter database API. We will perform text processing on the content of the specific pages for individuals on the Harry Potter Wiki.
+We will use the Harry Potter API to get all characters in the universe, which will be nodes in a network. To create the network, we will use web scraping to determine edges between the nodes through hyperlinks on each character's page on the Harry Potter Wiki. To populate the nodes with attributes we will use a Harry Potter database API. We will perform text processing on the content of the specific pages for individuals on the Harry Potter Wiki.
 
 The different sections of our analysis can be found using the Navigation Menu in the top right corner. And all the behind the scenes stuff, including code and further explanations can be found in our [Explainer Notebook](explainer-notebook.html)
 
