@@ -25,8 +25,8 @@ In order to do various natural language processing(NLP) tasks, we start by token
 
 > The average length of the tokenized wiki texts is 405.92 characters (with spaces). So the average length has been reduced with a factor of 10 by tokenization.
 
-And the distribution in log-scale:
-<img src="static/images/Distribution_wiki_text_tokenized_ls.png" />
+And the distribution plotted in log-scale:
+<img src="/images/Distribution_wiki_text_tokenized_ls.png" />
 
 It makes sense that that tokenizing the text drastically reduced the amount of words, as Wikipedia articles often are written in a very formal style and aim to provide comprehensive and neutral information on a particular topic. As a result, they often contain a lot of common and generic words known as stopwords. By tokenizing the text we also remove things such as punctuation, numbers, and special characters, which also plays a part in the reduction.
 

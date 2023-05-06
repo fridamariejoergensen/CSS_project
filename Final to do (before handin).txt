@@ -1,26 +1,13 @@
-Group 1: NLP on wiki text? What about source material of philosophers. They said it was easier with one source, but it is an interesting thought.
-
-Group 2: Plot degree distribution of networks. Look at centrality of characters, can we find the most central characters?
-
-Group 4: Build network based on characters appearing together.
-
-Use directed measure of centrality to find central characters.
-
-Distribution of edge weights
-
-WEighted community detection, weighted directed modularity
-
-Could use books or scripts, can be found online.
-
-
 TODO:
+- Write Discussion sections (6.1 & and 6.2 in notebook - see project criteria)
+- Write conlusion on entire project
+- Add data "download option" to the website as mentioned in the criteria
+- Make comments on individual wordclouds
+- Add the correct Explainer notebook link on the website 
 
-Assortativity
-Modularity
-Random network (plot in-degree og out-degree) og sammenlign med eget netværk
-Find average shortest path
-Clustering coefficient
 
-Gif af webscraping lokationer
+If overskud: 
+- Change color of eather "Gryffindor"-house or "Unknown"-house,
+so you are able to tell them a part in the graph.
+- Add more technical and descriptive markdown sections in the notebook.
 
-Indsæt billeder af netværker i explainer notebook
