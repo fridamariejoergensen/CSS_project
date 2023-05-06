@@ -158,16 +158,15 @@ We can see that the distribution of all edge weights (both in- and out-edges) is
 
 ## **Clustering coefficient**
 To investigate whether there are groupings in the Harry Potter network, we calculate the clustering coefficient. The clustering coefficient describes how much nodes tend to cluster together. A high clustering coefficient would mean that there are groups where the nodes have a high density of edges between them. Since our network is a weighted, directed graph, we used the [networkx average clustering function](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.cluster.average_clustering.html#networkx.algorithms.cluster.average_clustering) which handles both the weight and the directed edges, when calculating the clustering coefficient. The average clustering coefficient is:
-$$\langle C \rangle_{\text{HP network}} = 0.30
-$$\langle C \rangle_{\text{Random network}} = 0.0027
+$$\langle C \rangle_{\text{HP network}} = 0.30 $$
+$$\langle C \rangle_{\text{Random network}} = 0.0027 $$
 As expected the Harry Potter network has a higher clustering coefficient than the random network does.
 
 The Harry Potter network holds 200 nodes whose clustering coefficient is equal to 1. This means that every node, that the specific node is connected to, is also connected to each other and constitute a smaller subgraph inside the network. Also the network has 871 nodes with clustering coefficient equal to 0, meaning that for these nodes there are no connections among their respective neighbors.
 
+
 When removing coefficients of 1 and 0, the top 5 clustering coefficients and the character is listed below:
 
-<table>
-<tr><td>
 
 | Top 5 clustered characters  | Clustering coefficient |
 |---|---|
@@ -177,7 +176,6 @@ When removing coefficients of 1 and 0, the top 5 clustering coefficients and the
 | Audrey Weasley | 0.979 |
 | Mary Riddle | 0.970 |
 
-<tr><td><table>
 
 The table states that it is not the most central characters, that has the largest clustering coefficient. This fulfills the expectation since the main characters are expected to have a large amount of both incoming and outgoing edges (and all of the neighbors would likely not connected). Despite the characters with clustering coefficient equal to 1, the character with the greatest clustering coefficient is Lucy Weasley. A great deal of her edges is characters in the 'Weasley' family, and in that case it makes sense that everyone else in the family is connected as well. Of her 51 edges, 33 are Weasleys as well.
 
@@ -236,30 +234,29 @@ The largest strongly connected component in the Harry Potter network holds 562 n
 
 Using Networkx [Average shortest path length](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.shortest_paths.generic.average_shortest_path_length.html) function, the average lengths in both networks is found to be:
 
-$$\langle a \rangle_{\text{HP network}} = 3.66
-$$\langle a \rangle_{\text{Random network}} = 5.15
+$$\langle a \rangle_{\text{HP network}} = 3.66 $$
+$$\langle a \rangle_{\text{Random network}} = 5.15 $$
 
 This states, that the average shortest paths when considering all possible shortest path between nodes in both strongly connected subgraphs, the paths between nodes in the random network traverses edges of larger weigth than the paths in the Harry Potter network. A reason for this might be, as mentioned before, the largest connected component of the random networks holds approximately 3 times as many nodes, as the largest connected component of the Harry Potter network.
 
 Considering the distribution of all shortest paths in the largest connected components, the random network has a large peak as around length 5 (which is the mean). Comparing the distribution of the paths length in the largest component of the Harry Potter network, the distribution is way more equally spread and no unusual long paths occur. This means that it is easier to get from one character to another through links on the Harry Potter Fandom Wiki page, than it would be in a random network.
 
-<img src="/images/shortest_path_distribution.png.png"     />
+<img src="/images/shortest_path_distribution.png"     />
 <i>Figure 7. Distribution of shortest paths in largest connected components.</i>
 
-Note that the y-scale on the plot is scaled by $10^6$, meaning that the peak on the curve (a path length of approximately 5) occurs more than 60 times when the shortest path between all nodes in the largest connected component is calculated.
+Note that the y-scale on the plot is scaled by 10^6, meaning that the peak on the curve (a path length of approximately 5) occurs more than 60 times when the shortest path between all nodes in the largest connected component is calculated.
 
 ## **Closeness centrality**
 Since we have considered the shortest paths in the networks, it is also relevant to investiage the closeness centrality of each of the nodes. The closeness centrality is based on the mean shortest path between a specific node and all other reachable nodes in the graph. In this case the graph does not need to be strongly connected, and therefore the closeness centrality is calculated over all nodes in both the Harry Potter network and the random network. It means that the higher the value of closeness, the more central the nodes (character) is in the network.
 
 Taking the average of all closeness centrality values in each network gives the result:
-$$\langle C \rangle_{\text{HP network}} = 0.064
-$$\langle C \rangle_{\text{Random network}} = 0.19
+$$\langle C \rangle_{\text{HP network}} = 0.064 $$
+$$\langle C \rangle_{\text{Random network}} = 0.19 $$
 These averages states that more nodes occur to be central in the random network compared to the Harry Potter network.
 
 Since the closeness centrality is calculated for each node in the network, we examine the distribution of the values in both the Harry Potter network and the random network:
 <img src="/images/closeness_cent_distribution_network.png"     />
 <i>Figure 8. Distribution of closeness centrality in networks.</i>
 
-On the distribution of the closeness centrality in both networks, the straight line for the Harry Potter network, that takes a value above 1000 on the y-axis and approximately equal to 0 on the x-axis suggests, that a very large amount of characters in the Harry Potter network are not that central due to the very low value of closeness centrality. Nevertheless, the curve goes slightly upwards again afterwards meaning that some characters holds values of closeness centrality in the interval $[0.15,0.20], meaning that based on the paths to all reachable nodes, they are slightly central nodes in the network. For the random network the greatest amount of nodes (approximately 400 nodes) has a closeness centrality equal to 0.20. This means that the more nodes occur to be central in the random network than in the Harry Potter network.
+On the distribution of the closeness centrality in both networks, the straight line for the Harry Potter network, that takes a value above 1000 on the y-axis and approximately equal to 0 on the x-axis suggests, that a very large amount of characters in the Harry Potter network are not that central due to the very low value of closeness centrality. Nevertheless, the curve goes slightly upwards again afterwards meaning that some characters holds values of closeness centrality in the interval [0.15,0.20], meaning that based on the paths to all reachable nodes, they are slightly central nodes in the network. For the random network the greatest amount of nodes (approximately 400 nodes) has a closeness centrality equal to 0.20. This means that the more nodes occur to be central in the random network than in the Harry Potter network.
 
- <img src="/images/LYN.png" width="50" height="50" />

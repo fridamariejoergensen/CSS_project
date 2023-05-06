@@ -18,11 +18,11 @@ In order to do various natural language processing(NLP) tasks, we start by token
 
 <img src="/images/Distribution_wiki_text_tokenized.png"     />
 
-> The average length of the tokenized wiki texts is 405.92
+> The average length of the tokenized wiki texts is 405.92 characters (with spaces). So the average length has been reduced with a factor of 10 by tokenization.
 
-We see that tokenizing the text drastically reduced the amount of words in each charecters wikipedia text. This makes sense, since Wikipedia articles often are written in a very formal style and aim to provide comprehensive and neutral information on a particular topic. As a result, they often contain a lot of common and generic words known as stopwords. By tokenizing the text we also remove things such as punctuation, numbers, and special characters, which also plays a part in the reduction.
+It makes sense that that tokenizing the text drastically reduced the amount of words, as Wikipedia articles often are written in a very formal style and aim to provide comprehensive and neutral information on a particular topic. As a result, they often contain a lot of common and generic words known as stopwords. By tokenizing the text we also remove things such as punctuation, numbers, and special characters, which also plays a part in the reduction.
 
-When calculating the TF-IDF score, the term frequency is weighted by the inverse document frequency. Tokens with high scores are typically more specific to the community and used less frequently in general. These scores help us identify words that distinguish communities, providing insight into what makes each community unique. Below are shown wordclouds for the four main houses of Hogwarts "Gryffindor", "Slytherin", "Hufflepuff" & "Ravenclaw". The higher the TF-IDF score - the bigger the word. 
+Now we would like to find out which words charecterize the house communities. For this purpose we calculate the TF-IDF scores on the tokenized wiki-texts. When calculating the TF-IDF score, the term frequency is weighted by the inverse document frequency. Tokens with high scores are typically more specific to the community and used less frequently in general. These scores help us identify words that distinguish communities, providing insight into what makes each community unique. Below are shown wordclouds for the four main houses of Hogwarts "Gryffindor", "Slytherin", "Hufflepuff" & "Ravenclaw". The higher the TF-IDF score - the bigger the word. 
 
 <img src="/images/House_wordclouds.png"     />
 
@@ -231,7 +231,7 @@ All four communities have the words “harry”, “hogwarts”, and “school�
   </table>
   </div>
 
-We can see some overall differences between the communities.
+We can also see some overall differences between the communities.
 
 <p style="color:#7F0909;"> For example, Gryffindor’s top 10 words also include “ron”, “hermione”, “dumbledore”, and “weasley”. All characters associated with the Gryffindor house. Ron and Hermione are both Gryffindor students and friends of Harry, while Albus Dumbledore is the headmaster of Hogwarts and a former Gryffindor student aswell.
  The Weasley family is closely associated with the Gryffindor house, as it is said that the Weasleys are always assigned to the house by the sorting hat.</p>
@@ -243,7 +243,7 @@ We can see some overall differences between the communities.
 <p style="color:#0A5EA8;">Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”.Luna was a Ravenclaw student, Gilderoy Lockhart was a former Ravenclaw student and Defense Against the Dark Arts professor at Hogwarts, and the word “Professor” may be associated with Ravenclaw due to the house’s reputation for valuing intelligence and academic achievement.</p>
 
 
-It is also possible to make individual wordclouds for the charecters. We have chosen to generate one for each of the charecters that are on the list of top 10 charecters in term of indegree in our network graph. This is because the indegree is a good indication of it means that they have a high number of incoming connections from other characters in the network. This could indicate that the character is popular or influential within the network.
+It is also possible to make individual wordclouds for the charecters. We have chosen to generate one for each of the charecters that are on the list of top 10 charecters in term of indegree in our network graph. Because indegree tends to be a good indication of importance, as it means a high number of incoming connections from other characters in the network. Showing that the character is popular and influential within the network.
 
 
 <img src="/images/Harry James Potter.png" />
@@ -266,6 +266,3 @@ It is also possible to make individual wordclouds for the charecters. We have ch
 
 <img src="/images/Ginevra Molly Potter (née Weasley).png"     />
 
-
-
- <img src="/images/LYN.png" width="50" height="50" />
