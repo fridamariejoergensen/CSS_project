@@ -24,3 +24,5 @@ Clustering coefficient
 
 Personlige wordclouds
 Gif af webscraping lokationer
+
+Indsæt billeder af netværker i explainer notebook
