@@ -6,7 +6,7 @@ next: text-analysis
 
 To investigate the connections between the Harry Potter characters the universe can be modelled as a social network. From the Harry Potter wiki API, we have access to all characters. Based on the wiki hyperlinks between the characters, a network of nodes and edges was be created. Each node is a character and the references are edges. The network is modelled as a directed, weighted graph. If character 1 references character 2, an edge is created with a direction from character 1 to 2. The edge is weighted by the number of times the wiki page of character 1 references character 2. 
 
-After having filtered the data like explained in the [Data Description](../data-description), there are 1751 characters left, meaning the network has 1751 nodes. Based on the hyperlink references, the network has 7852 edges. The network can be seen below in figure 1:
+After having filtered the data like explained in the [Data Description](data-description.md), there are 1751 characters left, meaning the network has 1751 nodes. Based on the hyperlink references, the network has 7852 edges. The network can be seen below in figure 1:
 
 <img src="/images/total_network.png"     />
 <i>Figure 1. The nodes are colored based on the table below.</i>
@@ -105,9 +105,9 @@ We have plotted distribution of the in- and out-degrees of the nodes:
 <img src="/images/degree_distribution_network.png"     />
 <i>Figure 4. Distribution of in- and out-degree of all characters in the Harry Potter network.</i>
 
-From the plot it is apparent that the distribution of the character's degrees is heavy tailed. Since this is the case there must be a large inequality among both in-degrees and out-degrees. But since the line is not perfectly linear, this distribution does not fit all the way through. The slopes of both lines in the plot are negative, meaning that the most frequent occuring weights are small. Considering an example 'Tom Riddle', the values of his degrees occurs in the less frequent area, meaning that he must has a large both in-degree and out-degree.
+From the plot it is apparent that the distribution of the character's degrees is heavy tailed. Since this is the case there must be a large inequality among both in-degrees and out-degrees. But since the line is not perfectly linear, this distribution does not fit all the way through. The slopes of both lines in the plot are negative, meaning that the most frequent occuring weights are small. Considering an example 'Tom Riddle', the values of his degrees occurs in the less frequent area, meaning that he must has a large both in-degree and out-degree. This can also be seen from the 2 tabels below, that states the top 10 characters of both largest in- and out-degree separately.
 
-The top characters based on in- and out-degree can be seen in the table below. Exactly as expected the characters that has the greatest both in- and out-degree is Harry Potter. This makes sense considering he is the center character throughout all books and movies. Considering that Albus Dumbledore, Tom Riddle, Ronald Weasley and Hermione Granger is on both lists as well states their importance in the universe as well. Despite this, both Ronald Weasley's father Arthur and his sister, Ginevra, is found to be very relevant to other characters though they are not among the mostly known characters.
+The table below reveals xactly as expected the characters that has the greatest both in- and out-degree is Harry Potter. This makes sense considering he is the center character throughout all books and movies. Considering that Albus Dumbledore, Tom Riddle, Ronald Weasley and Hermione Granger is on both lists as well states their importance in the universe as well. Despite this, both Ronald Weasley's father Arthur and his sister, Ginevra, is found to be very relevant to other characters though they are not among the mostly known characters.
 
 <table>
 <tr><td>
@@ -227,37 +227,39 @@ The assortativity coefficient describes the correlation between the degrees of t
 </tbody>
 </table>
 
-The values of assorsativity for the random network are very small, meaning that same degree nodes are not very likely to be connected. These values occur to be a bit higher for the Harry Potter network. COMMENT MORE !!!
+The values of assorsativity for the random network are very small, meaning that same degree nodes are not very likely to be connected. These values occur to be a bit higher for the Harry Potter network. The values for the Harry Potter network shows, that when the in-degree of the neighbor is considered, the assorsativity is very small (almost as small as for the random network). But when considering the out-degree of the neighbor node the assorsativity is larger for the Harry Potter network and even smaller for the random network. This suggests that for the Harry Potter network, if eigther the in- or out-degree of the source node is low, then the out-degree of neighbor node is low as well (and vice versa if the degrees are high).
 
 ## **Shortest path**
-We could investigate the distribution and average shortest path of the Harry Potter network compared to the random network. ?????????
+Another relevant feature to examine for the networks if the shortest paths between nodes. Since the network edges are weigthed, these are considered when finding the shortest path, such that the shortest path between 2 nodes is found by tracking the edges with the smallest weigths. In order to detect the shortest paths between all nodes in the network, the network must be strongly connected. To be strongly connected means, that there must be a path from every individual node in the every other node in the graph. Therefore we find the largest strongly connected subgraph in both the Harry Potter network and the random network.
 
-Harry Potter network: 
-Largest strongly connected subgraph in Harry Potter network is: 562
-Average shortest path in the largest connected component in Harry Potter network is: 3.659466763088283
+The largest strongly connected component in the Harry Potter network holds 562 nodes, while the largest connected component in the random network holds 1717 nodes. Since the number of nodes in each of the largest connected components varies very must (respectively 562 and 1717), this may have an effect on the length of the average shortest paths. 
 
-Random network:
-Largest strongly connected subgraph in random network is: 1717
-Average shortest path in the largest connected component in random network is: 5.149643697401414
+Using Networkx [Average shortest path length](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.shortest_paths.generic.average_shortest_path_length.html) function, the average lengths in both networks is found to be:
 
-Distribution:
+$$\langle a \rangle_{\text{HP network}} = 3.66
+$$\langle a \rangle_{\text{Random network}} = 5.15
+
+This states, that the average shortest paths when considering all possible shortest path between nodes in both strongly connected subgraphs, the paths between nodes in the random network traverses edges of larger weigth than the paths in the Harry Potter network. A reason for this might be, as mentioned before, the largest connected component of the random networks holds approximately 3 times as many nodes, as the largest connected component of the Harry Potter network.
+
+Considering the distribution of all shortest paths in the largest connected components, the random network has a large peak as around length 5 (which is the mean). Comparing the distribution of the paths length in the largest component of the Harry Potter network, the distribution is way more equally spread and no unusual long paths occur. This means that it is easier to get from one character to another through links on the Harry Potter Fandom Wiki page, than it would be in a random network.
+
 <img src="/images/shortest_path_distribution.png.png"     />
-<i>Figure 7. Distribution of shortest paths in largest connected component.</i>
+<i>Figure 7. Distribution of shortest paths in largest connected components.</i>
+
+Note that the y-scale on the plot is scaled by $10^6$, meaning that the peak on the curve (a path length of approximately 5) occurs more than 60 times when the shortest path between all nodes in the largest connected component is calculated.
 
 ## **Closeness centrality**
-We could investigate the distribution and average closeness centrality of the Harry Potter network compared to the random network. ?????????
+Since we have considered the shortest paths in the networks, it is also relevant to investiage the closeness centrality of each of the nodes. The closeness centrality is based on the mean shortest path between a specific node and all other reachable nodes in the graph. In this case the graph does not need to be strongly connected, and therefore the closeness centrality is calculated over all nodes in both the Harry Potter network and the random network. It means that the higher the value of closeness, the more central the nodes (character) is in the network.
 
-average closeness centrality:
+Taking the average of all closeness centrality values in each network gives the result:
 $$\langle C \rangle_{\text{HP network}} = 0.064
 $$\langle C \rangle_{\text{Random network}} = 0.19
+These averages states that more nodes occur to be central in the random network compared to the Harry Potter network.
 
-distribution:
+Since the closeness centrality is calculated for each node in the network, we examine the distribution of the values in both the Harry Potter network and the random network:
 <img src="/images/closeness_cent_distribution_network.png"     />
 <i>Figure 8. Distribution of closeness centrality in networks.</i>
 
-COMMENT
-
-## **Double edge swap**
-Could use double edge swap to see if modularity is statistically different from zero.
+On the distribution of the closeness centrality in both networks, the straight line for the Harry Potter network, that takes a value above 1000 on the y-axis and approximately equal to 0 on the x-axis suggests, that a very large amount of characters in the Harry Potter network are not that central due to the very low value of closeness centrality. Nevertheless, the curve goes slightly upwards again afterwards meaning that some characters holds values of closeness centrality in the interval $[0.15,0.20], meaning that based on the paths to all reachable nodes, they are slightly central nodes in the network. For the random network the greatest amount of nodes (approximately 400 nodes) has a closeness centrality equal to 0.20. This means that the more nodes occur to be central in the random network than in the Harry Potter network.
 
  <img src="/images/LYN.png" width="50" height="50" />
