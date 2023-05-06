@@ -43,7 +43,7 @@ To better understand the Harry Potter network, we have created a random network 
 The random network is much more clustered and the degree of each node is more equally distributed such that there are no outliers, as there is in the Harry Potter network. At the same time the sum of incoming edge weights (strength) is more similar across all nodes.
 
 ## **Degree analysis**
-The degree of a node describes how many edges are connected to a node. With directed graphs we distinguish between edges going in and out of a node, referred to as in-degree and out-degree. Furthermore, with a weighted graph the weight of an edge is included in the degree, so we are dealing with weighted in- and out-degree. We have summarized some statistical metrics of the degrees found in the Harry Potter network and compare this to the random network.
+The degree of a node describes how many edges are connected to a node. With directed graphs we distinguish between edges going in and out of a node, referred to as in-degree and out-degree. Though, we have modelled our network as a directed, weighted graph, the weights are not taken into account in the following degree investigation. We have summarized some statistical metrics of the degrees found in the Harry Potter network and compare this to the random network.
 <table>
 <thead>
   <tr>
@@ -142,7 +142,7 @@ The top characters based on in- and out-degree can be seen in the table below. E
 
 </td></tr> </table>
 
-If the in-degree of all characters if plotted versus their respective out-degree, it is seen, that the characters with a low in-degree also have a low out-degree, as well as the opposite in both cases. Therefore a linear relationship can be added to the plot. This is shown below:
+If the in-degree of all characters is plotted versus their respective out-degree, it is seen, that the characters with a low in-degree also have a low out-degree, as well as the opposite in both cases. Therefore a linear relationship can be shown as below:
 
 <img src="/images/in_out_scatter.png"     />
 <i>Figure 5. A linear relationship between in- and out-degrees is found. </i>
@@ -154,7 +154,7 @@ Since the graph is both directed and weighted according to how many times anothe
 <img src="/images/edge_weight_distribution_network.png"     />
 <i>Figure 6. Distribution of all edge weights in log-log scale.</i>
 
-We can see that the distribution of all edge weights (both in- and out-edges) is heavy tailed as well, due to the almost straight line occuring in log-log scale. Since the slope of the line decreases as more weights are considered, it means that most edges has a small weight. But large edge weights occur infrequently, for instance the weight on the edge going from Harry Potter to Albus Dumbledore (the number of times Albus is referred to on Harry's wiki page).
+We can see that the distribution of all edge weights (both in- and out-edges) is heavy tailed as well, due to the almost straight line occuring in log-log scale. Since the slope of the line decreases as more weights are considered, it means that most edges have a very small weight. Large edge weights occur infrequently, but are very large compared to the majority of weights. An example of an infrequent and large weight is the edge going from Harry Potter to Albus Dumbledore (the number of times Albus is referred to on Harry's wiki page).
 
 ## **Clustering coefficient**
 To investigate whether there are groupings in the Harry Potter network, we calculate the clustering coefficient. The clustering coefficient describes how much nodes tend to cluster together. A high clustering coefficient would mean that there are groups where the nodes have a high density of edges between them. Since our network is a weighted, directed graph, we used the [networkx average clustering function](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.cluster.average_clustering.html#networkx.algorithms.cluster.average_clustering) which handles both the weight and the directed edges, when calculating the clustering coefficient. The average clustering coefficient is:
