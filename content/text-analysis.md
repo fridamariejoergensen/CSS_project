@@ -10,19 +10,23 @@ The text used for the text analysis were collected from Harry Potter character f
 
 The shortest wiki text is 126 characters (with spaces) and belongs to the character Oakden Hernshaw. The site contains the short description "Oakden Hernshaw was a wizard." a long with some sparse information about species and gender in the infobox. The longest wiki text is of length 285806 and is, not surprisingly, the one about Harry Potter. The distribution of the wiki texts can be seen below.
 
-<img src="/images/Distribution_wiki_text.png"     />
+<img src="/images/Distribution_wiki_text.png" />
 
 > The average length of a wiki text is 4486 characters (with spaces) and the median is 1004. For reference 4,500 characters is between 642 words and 1125 words.
 
 Becuase the distribution is so left skewed plotting it in log-scale helps with the visualization:
 
-<img src="images/Distribution_wiki_text_tokenized_ls.png" />
+<img src="/images/Distribution_wiki_text_ls.png" />
+
 
 In order to do various natural language processing(NLP) tasks, we start by tokenizing the text. We do this by removing URLs, punctuation marks, numbers, stopwords, and other unwanted tokens, in order to reduce their impact and to return a list of cleaned tokens that can be used for further NLP analysis. The distribution of the tokenized wiki texts can be seen below. 
 
 <img src="/images/Distribution_wiki_text_tokenized.png"     />
 
 > The average length of the tokenized wiki texts is 405.92 characters (with spaces). So the average length has been reduced with a factor of 10 by tokenization.
+
+And the distribution in log-scale:
+<img src="static/images/Distribution_wiki_text_tokenized_ls.png" />
 
 It makes sense that that tokenizing the text drastically reduced the amount of words, as Wikipedia articles often are written in a very formal style and aim to provide comprehensive and neutral information on a particular topic. As a result, they often contain a lot of common and generic words known as stopwords. By tokenizing the text we also remove things such as punctuation, numbers, and special characters, which also plays a part in the reduction.
 
