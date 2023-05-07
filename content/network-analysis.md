@@ -260,3 +260,38 @@ Since the closeness centrality is calculated for each node in the network, we ex
 
 On the distribution of the closeness centrality in both networks, the straight line for the Harry Potter network, that takes a value above 1000 on the y-axis and approximately equal to 0 on the x-axis suggests, that a very large amount of characters in the Harry Potter network are not that central due to the very low value of closeness centrality. Nevertheless, the curve goes slightly upwards again afterwards meaning that some characters holds values of closeness centrality in the interval [0.15,0.20], meaning that based on the paths to all reachable nodes, they are slightly central nodes in the network. For the random network the greatest amount of nodes (approximately 400 nodes) has a closeness centrality equal to 0.20. This means that the more nodes occur to be central in the random network than in the Harry Potter network.
 
+
+## **Community analysis**
+We have an expectation that the network will be divided into communities corresponding to their houses. To investigate this hypothesis, we divided the network into communities based on their houses. As comparison, we found communities with the Louvain algorithm. For both of these community divisions we calculated the modularity, which represents the strength of a community division. A high modularity indicates that the nodes within a community are highly connected and sparsely connected to nodes outside of the community. Modularity can be used as a measure to estimate which community division captures a network structure best.
+
+$$ Q_{\text{House communities}} = 0.13 $$
+$$ Q_{\text{Louvain communities}} = 0.60 $$
+
+When computing the communities, the split into communities depending on 'House' holds 8 different communities, respectively 'Gryffindor', 'Slytherin', 'Hufflepuff', 'Ravenclaw', 'Thunderbird', 'Pukwudgie' and 'Wampus'. This is a very small number of communities compared to the Louvain communities, of which there are 363.
+
+The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low.
+
+<img src="/images/houses_communities.png"     />
+<i>Figure 3. Distribution of community sizes for both 'House' and Louvain splits.</i>¨
+
+From the figure above it is clear that both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear. At the same time it is clear, than when considering the mean of the house community sizes, it is very skewed meaning that some communities are very large and holds a great amount of members, while other communities are very small holding not that many members. 
+
+<table>
+<tr><td>
+
+| House community | Size |
+|---|---|
+| Unknown | 1399 |
+| Slytherin | 118 |
+| Gryffindor | 107 |
+| Hufflepuff | 61 |
+| Ravenclaw | 61 |
+| Thunderbird | 3 |
+| Pukwudgie | 1 |
+| Wampus | 1 |
+
+</td><td></table>
+
+From the table the very skewed distribution of members in each house is showed. Considering the fact, that the house 'unknown' holds approximately 80 % of all characters, this is what causes the mean of the community sizes to be pushed towards the right in the plot. 
+
+ 

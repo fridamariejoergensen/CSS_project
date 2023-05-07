@@ -62,45 +62,10 @@ To gain insight into the data we have created a few visualizations. Firstly, we 
 
 Humans is clearly the largest species, which makes a lot of sense for the universe. However in the wordcloud, it is clear that a lot of different species exist in the universe and a lot of them are fictional species. Nevertheless, the size of the words are not linearly scaled, as "Human" would then be the only visible word.
 
-In the Harry Potter books and movies, the division of characters into houses at the British school for magic, Hogwarts, is an important theme in the universe. We have plotted the distribution of characters into houses including three houses outside of Hogwarts. The characters are distributed among 8 houses. The plot only shows 7 houses, as the last one holds all characters whose 'House' attribute is empty (referred to as 'Unknown'). The 'Unknown' house has 1398 characters and thereby is out of range compared to the other houses.
+In the Harry Potter books and movies, the division of characters into houses at the British school for magic, Hogwarts, is an important theme in the universe. We have plotted the distribution of characters into houses including three houses outside of Hogwarts. The characters are distributed among 8 houses. The 'Unknown' house holds all characters whose 'House' attribute was None.
 
 <img src="/images/houses_count.png"     />
 
 <i>Figure 2. The count of the characters in each house.</i>
 
-A clear tendency to see from the data is that besides the unknown house category, the houses 'Griffyndor' and 'Slytherin' holds the most members, approximately 100 and 120. This makes a lot of sense given that a main theme in the Harry Potter books and movies is the feud between these two houses. Furthermore, 'Hufflepuff' and 'Ravenclaw' are also represented well with around 60 characters each, whereas the 'non-Hogwarts' houses have very few members. This is also a reason why the unknown category is so big, namely the fact that the data holds a great amount of 'non-Hogwarts' characters. This holds exactly with our expectation of the universe, as it is centered around Hogwarts.
-
-## **Community analysis**
-We have an expectation that the network will be divided into communities corresponding to their houses. To investigate this hypothesis, we divided the network into communities based on their houses. As comparison, we found communities with the Louvain algorithm. For both of these community divisions we calculated the modularity, which represents the strength of a community division. A high modularity indicates that the nodes within a community are highly connected and sparsely connected to nodes outside of the community. Modularity can be used as a measure to estimate which community division captures a network structure best.
-
-$$ Q_{\text{House communities}} = 0.13 $$
-$$ Q_{\text{Louvain communities}} = 0.60 $$
-
-When computing the communities, the split into communities depending on 'House' holds 8 different communities, respectively 'Gryffindor', 'Slytherin', 'Hufflepuff', 'Ravenclaw', 'Thunderbird', 'Pukwudgie' and 'Wampus'. This is a very small number of communities compared to the Louvain communities, of which there are 363.
-
-The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low.
-
-<img src="/images/houses_communities.png"     />
-<i>Figure 3. Distribution of community sizes for both 'House' and Louvain splits.</i>¨
-
-From the figure above it is clear that both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear. At the same time it is clear, than when considering the mean of the house community sizes, it is very skewed meaning that some communities are very large and holds a great amount of members, while other communities are very small holding not that many members. 
-
-<table>
-<tr><td>
-
-| House community | Size |
-|---|---|
-| Unknown | 1399 |
-| Slytherin | 118 |
-| Gryffindor | 107 |
-| Hufflepuff | 61 |
-| Ravenclaw | 61 |
-| Thunderbird | 3 |
-| Pukwudgie | 1 |
-| Wampus | 1 |
-
-</td><td></table>
-
-From the table the very skewed distribution of members in each house is showed. Considering the fact, that the house 'unknown' holds approximately 80 % of all characters, this is what causes the mean of the community sizes to be pushed towards the right in the plot. 
-
- 
+A clear tendency to see from the data is that besides the unknown house category, the houses 'Griffyndor' and 'Slytherin' holds the most members, approximately 100 and 120. This makes a lot of sense given that a main theme in the Harry Potter books and movies is the feud between these two houses. Furthermore, 'Hufflepuff' and 'Ravenclaw' are also represented well with around 60 characters each, whereas the 'non-Hogwarts' houses have very few members. We expected to see a larger fraction of characters in the 'Hogwarts' houses, but the 'Unknown' category is very dominant. It does however match our expectation that 'non-Hogwarts' houses have so few characters, as the universe is centered around Hogwarts.
