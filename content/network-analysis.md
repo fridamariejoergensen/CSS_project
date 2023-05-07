@@ -35,15 +35,15 @@ In figure 2 the network is sized by strength, meaning the nodes are arranged acc
 <i>Figure 2. Nodes are sized by strength.</i>
 
 ## **Random network**
-To better understand the Harry Potter network, we have created a random network as a baseline for comparison. The random network is created with the same number of nodes and edges. Since the Harry Potter network is directed the random network is as well. The Harry Potter network is weighted as well, therefore the random network is assigned the weights of the edges in the Harry Potter network randomly. Thereby an both directed and weighted random graph is made.
+To better understand the Harry Potter network, we have created a random network as a baseline for comparison. The random network is created with the same number of nodes and edges. Since the Harry Potter network is directed the random network is as well. The Harry Potter network is weighted as well, therefore the random network is assigned the weights of the edges in the Harry Potter network randomly. Thereby a both directed and weighted random graph is made.
 
 <img src="/images/random_network.png"     />
 <i>Figure 3. Random network visualized and sized by strength.</i>
 
-The random network is much more clustered and the degree of each node is more equally distributed such that there are no outliers, as there is in the Harry Potter network. At the same time the sum of incoming edge weights (strength) is more similar across all nodes.
+The random network looks much more clustered and it looks like the degree of each node is more equally distributed such that there are no lonely nodes, as there is in the Harry Potter network. At the same time the sum of incoming edge weights (strength) is more similar across all nodes.
 
 ## **Degree analysis**
-The degree of a node describes how many edges are connected to a node. With directed graphs we distinguish between edges going in and out of a node, referred to as in-degree and out-degree. Though, we have modelled our network as a directed, weighted graph, the weights are not taken into account in the following degree investigation. We have summarized some statistical metrics of the degrees found in the Harry Potter network and compare this to the random network.
+The degree of a node describes how many edges are connected to a node. With directed graphs we distinguish between edges going in and out of a node, referred to as in-degree and out-degree. Though, we have modelled our network as a directed, weighted graph, the weights are not taken into account in the following degree investigation. We have summarized some statistical metrics of the degrees found in the Harry Potter network and compare these to the random network.
 <table>
 <thead>
   <tr>
