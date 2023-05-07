@@ -4,6 +4,7 @@ TODO:
 - Add data "download option" to the website as mentioned in the criteria
 - Make comments on individual wordclouds
 - Add the correct Explainer notebook link on the website 
+- Add images of networks in explainer notebook
 
 
 If overskud: 
