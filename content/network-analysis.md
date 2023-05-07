@@ -260,6 +260,18 @@ Since the closeness centrality is calculated for each node in the network, we ex
 
 On the distribution of the closeness centrality in both networks, the straight line for the Harry Potter network, that takes a value above 1000 on the y-axis and approximately equal to 0 on the x-axis suggests, that a very large amount of characters in the Harry Potter network are not that central due to the very low value of closeness centrality. Nevertheless, the curve goes slightly upwards again afterwards meaning that some characters holds values of closeness centrality in the interval [0.15,0.20], meaning that based on the paths to all reachable nodes, they are slightly central nodes in the network. For the random network the greatest amount of nodes (approximately 400 nodes) has a closeness centrality equal to 0.20. This means that the more nodes occur to be central in the random network than in the Harry Potter network.
 
+## **Mixing patterns**
+In our data section, we investigated the distributions of house, species and gender. Here we want to dive deeper. Is their a pattern in how the nodes connect based on their attributes? We investigate how much the network mixes across the attributes: species, gender and house. A high mixing pattern means that nodes of the same attributes tend to be connected. We compare the attributes of a node to the nodes that it points to with a directed edge. The mixing patterns for the attributes are:
+| Attribute  | Mixing pattern |
+|---|---|
+| House | 0.57 |
+| Species | 0.85 |
+| Gender | 0.53 |
+
+However, we don't really know how to interpret these values without anything to relate them to. Therefore, we made a randomization experiment. We computed 500 graphs of the same structure but with the attributes assigned randomly. We plotted the distributions of these in the plot below and the dotted line is the respective value found from the Harry Potter network:
+
+'<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~s204052/8.embed" height="525" width="100%"></iframe>'
+We see that the mixing patterns from the Harry Potter network all lie outside the random distributions. We can now conclude that the Harry Potter network has significant mixing patterns. We see that nodes of the same gender and species tend to link to each other. However, nodes of the same houses do not tend to link to each other.
 
 ## **Community analysis**
 We have an expectation that the network will be divided into communities corresponding to their houses. To investigate this hypothesis, we divided the network into communities based on their houses. As comparison, we found communities with the Louvain algorithm. For both of these community divisions we calculated the modularity, which represents the strength of a community division. A high modularity indicates that the nodes within a community are highly connected and sparsely connected to nodes outside of the community. Modularity can be used as a measure to estimate which community division captures a network structure best.
@@ -269,7 +281,7 @@ $$ Q_{\text{Louvain communities}} = 0.60 $$
 
 When computing the communities, the split into communities depending on 'House' holds 8 different communities, respectively 'Gryffindor', 'Slytherin', 'Hufflepuff', 'Ravenclaw', 'Thunderbird', 'Pukwudgie' and 'Wampus'. This is a very small number of communities compared to the Louvain communities, of which there are 363.
 
-The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low.
+The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low. Furthermore, in our analysis of the mixing patterns just above we found that nodes of the same houses don't have a high tendency to mix. This also explains the poor community divison based on houses.
 
 <img src="/images/houses_communities.png"     />
 <i>Figure 3. Distribution of community sizes for both 'House' and Louvain splits.</i>¨
@@ -292,6 +304,6 @@ From the figure above it is clear that both the House communities as well as the
 
 </td><td></table>
 
-From the table the very skewed distribution of members in each house is showed. Considering the fact, that the house 'unknown' holds approximately 80 % of all characters, this is what causes the mean of the community sizes to be pushed towards the right in the plot. 
+From the table the very skewed distribution of members in each house is showed. Considering the fact, that the house 'unknown' holds approximately 80 % of all characters, this is what causes the mean of the community sizes to be pushed towards the right in the plot. Furthermore
 
  
