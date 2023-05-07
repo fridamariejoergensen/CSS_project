@@ -285,7 +285,7 @@ The modularity of the Louvain communities is clearly higher. A likely explainati
 <img src="/images/houses_communities.png"     />
 <i>Figure 9. Distribution of community sizes for both 'House' and Louvain splits.</i>¨
 
-From figure 9 it is clear that both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear. At the same time it is clear, that when considering the mean of the house community sizes, it is very skewed meaning that some communities are very large and holds a great amount of members, while other communities are very small holding not that many members. 
+From figure 9 it is clear that the sizes of both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear. At the same time it is clear, that when considering the mean of the house community sizes, it is very skewed meaning that some communities are very large and holds a great amount of members, while other communities are very small holding not that many members. An important thing to understand the plot is that the community sizes are binned in order to calculate density. Therefore the 'Unknown' house is in a bin which i centered to the left of the mean. Howwever, the 'Unknown' house is what makes the mean so high.
 
 <table>
 <tr><td>
