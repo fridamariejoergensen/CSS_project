@@ -261,26 +261,34 @@ The wordcloud for Harry Potter mainly highlights other characters close to him. 
 <table>
   <tr>
     <td><img src="/images/Hermione Jean Granger.png" /></td>
-    <td><img src="/images/Tom Marvolo Riddle.png" /></td>
+    <td><img src="/images/Ginevra Molly Potter (née Weasley).png" /></td>
   </tr>
 </table>
+
+Whereas the wordclouds for Ginny and Hermoine is a mix between characters close to them and their values.
+
+<table>
+  <tr>
+  <td style="width:50%;"><img src="/images/Tom Marvolo Riddle.png" /></td>
+  <td style="width:50%;"><img src="/images/Albus Dumbledore.png" /></td>
+</table>
+
+Not surprising, Voldemorts wordcloud appears to include more dark words than the other charecters', such as "fear", "death", "dark", "snake" and so on. Dumbledores wordcloud actually also include these types of words but are in general more of a mix between bad and good. 
+
 <table>
   <tr>
     <td><img src="/images/Sirius Black III.png" /></td>
     <td><img src="/images/Severus Snape.png" /></td>
   </tr>
 </table>
-<table>
-  <tr>
-    <td><img src="/images/Arthur Weasley.png" /></td>
-    <td><img src="/images/Albus Dumbledore.png" /></td>
-  </tr>
-</table>
+
+Sirius Black and Snape's wordclouds have their own names and Harry's name as the biggest words in terms of TF-IDF score because, which makes sense since they are significant charecters in Harrys life. Sirius Black is Harry's godfathers and a pivotal character in the story. Snape, on the other hand, is a complicated character with a significant role as Harry's potions professor but also as a double agent, with a special bond and obligation to keep Harry alive throughout the series. Both characters have a close relationship with Harry, and their actions heavily impact the plot of the series. 
+
 <table>
   <tr>
     <td><img src="/images/Draco Lucius Malfoy.png" /></td>
-    <td><img src="/images/Ginevra Molly Potter (née Weasley).png" /></td>
+    <td><img src="/images/Arthur Weasley.png" /></td>
   </tr>
 </table>
 
-Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 
+Almost all of the wordclouds have the name of the concerned charecter and then Harry's name as the top words in terms of TF-IDF scores. Since the method measures the importance of words in a document by giving a higher score to words that appear frequently in that document but infrequently in other documents in a corpus, this tells us - as expected - that the top 10 people in terms of indegree play a large roll in Harry Potter's life. Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 

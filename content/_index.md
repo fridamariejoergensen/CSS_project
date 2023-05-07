@@ -12,8 +12,5 @@ We will use the Harry Potter API to get all characters in the universe, which wi
 
 The different sections of our analysis can be found using the Navigation Menu in the top right corner. And all the behind the scenes stuff, including code and further explanations can be found in our [Explainer Notebook](explainer-notebook.html).
 
-
-# !! INDSÆT RIGTIGT LINK TIL EXPLAINER!!!!!!
-
 ## **APIs and websites for scraping data**
 In order to obtain the data, we used webscraping on several websites as well as quering from an API. Initially we started quering a dataset of all characters in the Harry Potter universe (as well as corresponding attributes) from the API [Potterdb API](https://api.potterdb.com/v1/characters). For more detail about which specific attributes we collected, go to the 'Data' section. Secondly we used webscraping in order to gain all body text from each characters individual page on [Harry Potter fandom wiki](https://harrypotter.fandom.com/wiki/Main_Page). Additionally to the body text, we also collected all hyper link references on the page in order to find references to other characters. In this case we also collect references that are not characters, since we just take all hyper links in the page, but this is filtered afterwards in the filtering process. Lastly 2 extra columns is added to the dataframe. One containing the characters wiki name (which is the end of the URL of their individual wiki page). An example of this is [Ronald Weasley](https://harrypotter.fandom.com/wiki/Ronald_Weasley) whose wiki name is Ronald_Weasley. The other column contains the sum of the character links meaning that it count how many times each characters hyper link occurs on the other characters website.
