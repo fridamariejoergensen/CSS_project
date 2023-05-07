@@ -1,10 +1,10 @@
 TODO:
-- Write Discussion sections (6.1 & and 6.2 in notebook - see project criteria)
 - Write conlusion on entire project
 - Add data "download option" to the website as mentioned in the criteria
-- Make comments on individual wordclouds
+- Make comments on individual wordclouds (half done)
 - Add the correct Explainer notebook link on the website 
 - Add images of networks in explainer notebook
+- Explanation of text part in explainer notebook
 
 Consider:
 -  When you plot a logarithmic axis there is no need to write “Logarithmic X”. You can simply say “X”. On the y-axis, if you have a density you can simply say “Probability density” rather than “logarithmic density of X”. The density is a density no matter how you bin. 
@@ -12,8 +12,6 @@ Consider:
 - Skal man kun arbejde med largest connected component?
 
 If overskud: 
-- Change color of eather "Gryffindor"-house or "Unknown"-house,
-so you are able to tell them a part in the graph.
 - Add more technical and descriptive markdown sections in the notebook.
 - Mixing patterns based on gender, species or house
 
