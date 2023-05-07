@@ -1,17 +1,13 @@
 TODO:
-- Write conlusion on entire project
-- Add data "download option" to the website as mentioned in the criteria (dont know if it is done correct, but is written on index.md page)
 - Make comments on individual wordclouds (half done)
 - Add the correct Explainer notebook link on the website
 - Explanation of text part in explainer notebook
 
 Consider:
 -  When you plot a logarithmic axis there is no need to write “Logarithmic X”. You can simply say “X”. On the y-axis, if you have a density you can simply say “Probability density” rather than “logarithmic density of X”. The density is a density no matter how you bin. 
+(fixed)
 - You computed the degree assortativity using the pre-implemented networkx function. Skal vi implementere noget selv?¨
 - Skal man kun arbejde med largest connected component?
 
 If overskud: 
 - Add more technical and descriptive markdown sections in the notebook.
-- Mixing patterns based on gender, species or house
-
-
