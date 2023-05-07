@@ -283,9 +283,9 @@ When computing the communities, the split into communities depending on 'House' 
 The modularity of the Louvain communities is clearly higher. A likely explaination for the low modularity of the house communities is that the 'Unknown' house is over-represented in the data set. The 'Unknown' house was assigned to any character without a house, meaning there is no guarantee that the characters in this house have any edges between them. They are likely less connected than the characters in the other houses. The 'Unknown' house is the largest community, and since the nodes within might be lowly connected it makes sense that the modularity is low. Furthermore, in our analysis of the mixing patterns just above we found that nodes of the same houses don't have a high tendency to mix. This also explains the poor community divison based on houses.
 
 <img src="/images/houses_communities.png"     />
-<i>Figure 3. Distribution of community sizes for both 'House' and Louvain splits.</i>¨
+<i>Figure 9. Distribution of community sizes for both 'House' and Louvain splits.</i>¨
 
-From the figure above it is clear that both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear. At the same time it is clear, that when considering the mean of the house community sizes, it is very skewed meaning that some communities are very large and holds a great amount of members, while other communities are very small holding not that many members. 
+From figure 9 it is clear that both the House communities as well as the Louvain communities are heavy tailed. This is due to the fact that the lines in log-log scale are approximately linear. At the same time it is clear, that when considering the mean of the house community sizes, it is very skewed meaning that some communities are very large and holds a great amount of members, while other communities are very small holding not that many members. 
 
 <table>
 <tr><td>

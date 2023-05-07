@@ -11,7 +11,7 @@ The shortest wiki text is 126 characters (with spaces) and belongs to the charac
 
 > The average length of a wiki text is 4486 characters (with spaces) and the median is 1004. For reference 4,500 characters is between 642 words and 1125 words.
 
-Becuase the distribution is so left skewed plotting it in log-scale helps with the visualization:
+Because the distribution is so left skewed plotting it in log-scale helps with the visualization:
 
 <img src="/images/Distribution_wiki_text_ls.png" />
 
