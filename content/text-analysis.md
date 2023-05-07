@@ -5,9 +5,6 @@ prev: network-analysis
 
 The text used for the text analysis were collected from Harry Potter character fandom wiki-pages. By going to the webpage for the desired character, looking for the main text on the page, and then gathering all of that text together into one long string. We skip over any irrelevant information, like tables or lists, and only collect the main text. The infobox that is present on all character pages is still included. 
 
-
-
-
 The shortest wiki text is 126 characters (with spaces) and belongs to the character Oakden Hernshaw. The site contains the short description "Oakden Hernshaw was a wizard." along with some sparse information about species and gender in the infobox. The longest wiki text is of length 285806 and is, not surprisingly, the one about Harry Potter. The distribution of the wiki texts can be seen below.
 
 <img src="/images/Distribution_wiki_text.png" />
@@ -285,5 +282,5 @@ The wordcloud for Harry Potter mainly highlights other characters close to him. 
     <td><img src="/images/Ginevra Molly Potter (née Weasley).png" /></td>
   </tr>
 </table>
-Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 
 
+Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 
