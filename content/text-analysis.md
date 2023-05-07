@@ -251,26 +251,39 @@ We can also see some overall differences between the communities.
 <p style="color:#0A5EA8;">Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”.Luna was a Ravenclaw student, Gilderoy Lockhart was a former Ravenclaw student and Defense Against the Dark Arts professor at Hogwarts, and the word “Professor” may be associated with Ravenclaw due to the house’s reputation for valuing intelligence and academic achievement.</p>
 
 
-It is also possible to make individual wordclouds for the charecters. We have chosen to generate one for each of the charecters that are on the list of top 10 charecters in term of indegree in our network graph. Because indegree tends to be a good indication of importance, as it means a high number of incoming connections from other characters in the network. Showing that the character is popular and influential within the network.
+It is also possible to make individual wordclouds for the charecters. We have chosen to generate one for each of the charecters that are on the list of top 10 characters in term of in-degree in our network graph. Because in-degree tends to be a good indication of importance, as it means a high number of incoming connections from other characters in the network. Showing that the character is popular and influential within the network. The individual wordclouds generally present the character's name as the biggest word, which makes sense as a name is a farily unique word that is not commonly used in other contexts.
 
+<table>
+  <tr>
+    <td><img src="/images/Harry James Potter.png" /></td>
+    <td><img src="/images/Ronald Bilius Weasley.png" /></td>
+  </tr>
+</table>
+The wordcloud for Harry Potter mainly highlights other characters close to him. Whereas the wordcloud for Ron Weasley shows more words about his character like 'family', 'friend', 'student' etc. It is pretty interesting that the main character Harry Potter is described with so few important words.
 
-<img src="/images/Harry James Potter.png" />
-
-<img src="/images/Ronald Bilius Weasley.png"     />
-
-<img src="/images/Hermione Jean Granger.png"   />
-
-<img src="/images/Tom Marvolo Riddle.png"     />
-
-<img src="/images/Sirius Black III.png"     />
-
-<img src="/images/Severus Snape.png"     />
-
-<img src="/images/Arthur Weasley.png"     />
-
-<img src="/images/Albus Dumbledore.png"  />
-
-<img src="/images/Draco Lucius Malfoy.png"     />
-
-<img src="/images/Ginevra Molly Potter (née Weasley).png"     />
+<table>
+  <tr>
+    <td><img src="/images/Hermione Jean Granger.png" /></td>
+    <td><img src="/images/Tom Marvolo Riddle.png" /></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="/images/Sirius Black III.png" /></td>
+    <td><img src="/images/Severus Snape.png" /></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="/images/Arthur Weasley.png" /></td>
+    <td><img src="/images/Albus Dumbledore.png" /></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="/images/Draco Lucius Malfoy.png" /></td>
+    <td><img src="/images/Ginevra Molly Potter (née Weasley).png" /></td>
+  </tr>
+</table>
+Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 
 
