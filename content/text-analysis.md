@@ -252,7 +252,7 @@ It is also possible to make individual wordclouds for the characters. We have ch
 
 <table>
   <tr>
-    <td><img src="static/images/Harry James Potter.png" /></td>
+    <td><img src="/images/Harry James Potter.png" /></td>
     <td><img src="/images/Ronald Bilius Weasley.png" /></td>
   </tr>
 </table>
