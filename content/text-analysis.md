@@ -11,7 +11,7 @@ The shortest wiki text is 126 characters (with spaces) and belongs to the charac
 
 > The average length of a wiki text is 4486 characters (with spaces) and the median is 1004. For reference 4,500 characters is between 642 words and 1125 words.
 
-Becuase the distribution is so left skewed plotting it in log-scale helps with the visualization:
+Because the distribution is so left skewed plotting it in log-scale helps with the visualization:
 
 <img src="/images/Distribution_wiki_text_ls.png" />
 
@@ -248,7 +248,7 @@ We can also see some overall differences between the communities.
 <p style="color:#0A5EA8;">Ravenclaw’s top 10 words include “luna”, “lockhart”, and “professor”.Luna was a Ravenclaw student, Gilderoy Lockhart was a former Ravenclaw student and Defense Against the Dark Arts professor at Hogwarts, and the word “Professor” may be associated with Ravenclaw due to the house’s reputation for valuing intelligence and academic achievement.</p>
 
 
-It is also possible to make individual wordclouds for the charecters. We have chosen to generate one for each of the charecters that are on the list of top 10 characters in term of in-degree in our network graph. Because in-degree tends to be a good indication of importance, as it means a high number of incoming connections from other characters in the network. Showing that the character is popular and influential within the network. The individual wordclouds generally present the character's name as the biggest word, which makes sense as a name is a farily unique word that is not commonly used in other contexts.
+It is also possible to make individual wordclouds for the characters. We have chosen to generate one for each of the characters that are on the list of top 10 characters in term of in-degree in our network graph. Because in-degree tends to be a good indication of importance, as it means a high number of incoming connections from other characters in the network. Showing that the character is popular and influential within the network. The individual wordclouds generally present the character's name as the biggest word, which makes sense as a name is a farily unique word that is not commonly used in other contexts.
 
 <table>
   <tr>
@@ -273,7 +273,7 @@ Whereas the wordclouds for Ginny and Hermoine is a mix between characters close 
   <td style="width:50%;"><img src="/images/Albus Dumbledore.png" /></td>
 </table>
 
-Not surprising, Voldemorts wordcloud appears to include more dark words than the other charecters', such as "fear", "death", "dark", "snake" and so on. Dumbledores wordcloud actually also include these types of words but are in general more of a mix between bad and good. 
+Not surprising, Voldemorts wordcloud appears to include more dark words than the other characters', such as "fear", "death", "dark", "snake" and so on. Dumbledores wordcloud actually also include these types of words but are in general more of a mix between bad and good. 
 
 <table>
   <tr>
@@ -282,7 +282,7 @@ Not surprising, Voldemorts wordcloud appears to include more dark words than the
   </tr>
 </table>
 
-Sirius Black and Snape's wordclouds have their own names and Harry's name as the biggest words in terms of TF-IDF score because, which makes sense since they are significant charecters in Harrys life. Sirius Black is Harry's godfathers and a pivotal character in the story. Snape, on the other hand, is a complicated character with a significant role as Harry's potions professor but also as a double agent, with a special bond and obligation to keep Harry alive throughout the series. Both characters have a close relationship with Harry, and their actions heavily impact the plot of the series. 
+Sirius Black and Snape's wordclouds have their own names and Harry's name as the biggest words in terms of TF-IDF score because, which makes sense since they are significant characters in Harrys life. Sirius Black is Harry's godfathers and a pivotal character in the story. Snape, on the other hand, is a complicated character with a significant role as Harry's potions professor but also as a double agent, with a special bond and obligation to keep Harry alive throughout the series. Both characters have a close relationship with Harry, and their actions heavily impact the plot of the series. 
 
 <table>
   <tr>
@@ -291,4 +291,4 @@ Sirius Black and Snape's wordclouds have their own names and Harry's name as the
   </tr>
 </table>
 
-Almost all of the wordclouds have the name of the concerned charecter and then Harry's name as the top words in terms of TF-IDF scores. Since the method measures the importance of words in a document by giving a higher score to words that appear frequently in that document but infrequently in other documents in a corpus, this tells us - as expected - that the top 10 people in terms of indegree play a large roll in Harry Potter's life. Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 
+Almost all of the wordclouds have the name of the concerned character and then Harry's name as the top words in terms of TF-IDF scores. Since the method measures the importance of words in a document by giving a higher score to words that appear frequently in that document but infrequently in other documents in a corpus, this tells us - as expected - that the top 10 people in terms of indegree play a large roll in Harry Potter's life. Overall, the individual wordclouds describes the characters pretty well. Names are big with high TF-IDF scores showing each character's important connections. Looking at the words that are smaller we see more of their story in the universe. It seems the wiki pages are pretty factual as we would expect. There are generally not many adjectives or highly connotated words. Having done this analysis we can trust the pages more, as they seem objective. A potential add-on would be to make a semantic sentiment analysis to really make sure the wiki pages are objective. 
