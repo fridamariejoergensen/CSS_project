@@ -165,7 +165,7 @@ As expected the Harry Potter network has a higher clustering coefficient than th
 The Harry Potter network holds 200 nodes whose clustering coefficient is equal to 1. This means that every node, that the specific node is connected to, is also connected to each other and constitute a smaller subgraph inside the network. Also the network has 871 nodes with clustering coefficient equal to 0, meaning that for these nodes there are no connections among their respective neighbors.
 
 
-When removing coefficients of 1 and 0, the top 5 clustering coefficients and the character is listed below:
+Since the coefficients of 1 tells us little about the largest connected component, we chose to look at the top 5 clustering coefficients disregarding 1 and the characters are listed below:
 
 
 | Top 5 clustered characters  | Clustering coefficient |
