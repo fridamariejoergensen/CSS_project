@@ -269,8 +269,7 @@ In our data section, we investigated the distributions of house, species and gen
 | Gender | 0.53 |
 
 However, we don't really know how to interpret these values without anything to relate them to. Therefore, we made a randomization experiment. We computed 500 graphs of the same structure but with the attributes assigned randomly. We plotted the distributions of these in the plot below and the dotted line is the respective value found from the Harry Potter network:
-
-'<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~s204052/8.embed" height="525" width="100%"></iframe>'
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~s204052/8.embed" height="525" width="100%"></iframe>
 We see that the mixing patterns from the Harry Potter network all lie outside the random distributions. We can now conclude that the Harry Potter network has significant mixing patterns. We see that nodes of the same gender and species tend to link to each other. However, nodes of the same houses do not tend to link to each other.
 
 ## **Community analysis**
