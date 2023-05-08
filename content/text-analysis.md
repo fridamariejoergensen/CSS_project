@@ -252,16 +252,16 @@ It is also possible to make individual wordclouds for the characters. We have ch
 
 <table>
   <tr>
-    <td><img src="/images/Harry James Potter.png" /></td>
-    <td><img src="/images/Ronald Bilius Weasley.png" /></td>
+    <td style="width:50%;"><img src="/images/Harry James Potter.png" /></td>
+    <td style="width:50%;"><img src="/images/Ronald Bilius Weasley.png" /></td>
   </tr>
 </table>
 The wordcloud for Harry Potter mainly highlights other characters close to him. Whereas the wordcloud for Ron Weasley shows more words about his character like 'family', 'friend', 'student' etc. It is pretty interesting that the main character Harry Potter is described with so few important words.
 
 <table>
   <tr>
-    <td><img src="/images/Hermione Jean Granger.png" /></td>
-    <td><img src="/images/Ginevra Molly Potter (née Weasley).png" /></td>
+    <td style="width:50%;"><img src="/images/Hermione Jean Granger.png" /></td>
+    <td style="width:50%;"><img src="/images/Ginevra Molly Potter (née Weasley).png" /></td>
   </tr>
 </table>
 
@@ -277,8 +277,8 @@ Not surprising, Voldemorts wordcloud appears to include more dark words than the
 
 <table>
   <tr>
-    <td><img src="/images/Sirius Black III.png" /></td>
-    <td><img src="/images/Severus Snape.png" /></td>
+    <td style="width:50%;"><img src="/images/Sirius Black III.png" /></td>
+    <td style="width:50%;"><img src="/images/Severus Snape.png" /></td>
   </tr>
 </table>
 
@@ -286,8 +286,8 @@ Sirius Black and Snape's wordclouds have their own names and Harry's name as the
 
 <table>
   <tr>
-    <td><img src="/images/Draco Lucius Malfoy.png" /></td>
-    <td><img src="/images/Arthur Weasley.png" /></td>
+    <td style="width:50%;"><img src="/images/Draco Lucius Malfoy.png" /></td>
+    <td style="width:50%;"><img src="/images/Arthur Weasley.png" /></td>
   </tr>
 </table>
 
