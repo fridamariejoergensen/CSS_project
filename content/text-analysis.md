@@ -270,7 +270,7 @@ Whereas the wordclouds for Ginny and Hermoine is a mix between characters close 
 <table>
   <tr>
   <td style="width:50%;"><img src="/images/Tom Riddle.png" /></td>
-  <td style="width:50%;"><img src="/images/Albus Dombledore" /></td>
+  <td style="width:50%;"><img src="/images/Albus Dumbledore.png" /></td>
 </table>
 
 Not surprising, Voldemorts wordcloud appears to include more dark words than the other characters', such as "fear", "death", "dark", "snake" and so on. Dumbledores wordcloud actually also include these types of words but are in general more of a mix between bad and good. 
